@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 import Image from 'next/image'
-import logo from '@/public/assets/AIFB_Logo.png'
+import logo from '@/public/assets/AIFB-Logo-White.svg'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,9 +11,9 @@ const Navbar = () => {
     <header className='bg-black/10 text-white w-full z-50 fixed top-0 left-0 border-b-[0.5px] border-gray-300'>
       <div className='max-w-7xl mx-auto px-4 py-4 flex justify-between items-center'>
         {/* Logo */}
-        <div className='h-10'>
+        <div className='w-[150px] h-[40px]'>
           <Image
-            className='w-full h-full object-contain'
+            className='w-full h-full object-cover'
             src={logo}
             alt='AI Forum Bangladesh Logo'
           />
