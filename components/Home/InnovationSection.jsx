@@ -4,23 +4,23 @@ import { GoArrowRight } from 'react-icons/go'
 
 const InnovationSection = () => {
   return (
-    <section className='relative bg-[#142328] text-white md:px-4 py-8 md:pt-36 md:pb-20 overflow-visible'>
-      <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 relative z-10 gap-4 md:gap-12'>
+    <section className='relative bg-[#142328] text-white px-5 py-4 sm:py-8 lg:pt-36 lg:pb-20 overflow-visible'>
+      <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 relative z-10 gap-4 lg:gap-12'>
         {/* Image Side */}
         <div className='relative '>
-          <div className='lg:absolute lg:-top-24  w-full px-4 z-10'>
+          <div className='lg:absolute lg:-top-24  w-full z-10'>
             <Image
               src={innovationImg}
               alt='Building Innovation Ecosystem'
-              className='w-full h-auto max-w-[600px] mx-auto object-contain'
+              className='w-full h-auto lg:max-w-[600px] mx-auto object-contain'
               priority
             />
           </div>
         </div>
 
         {/* Text Side */}
-        <div className='flex items-center px-4 py-6 lg:py-0 z-10'>
-          <div className='max-w-lg mx-auto lg:mx-0 text-center lg:text-left'>
+        <div className='flex items-center lg:px-4 py-6 lg:py-0 z-10'>
+          <div className='max-w-lg  lg:mx-0 text-left'>
             <h2 className='text-3xl md:text-[40px] font-bold mb-4 leading-[48px]'>
               Building Innovation <br /> Ecosystem
             </h2>

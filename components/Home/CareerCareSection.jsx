@@ -5,14 +5,14 @@ import careerImg from '@/public/assets/home/CareerCare.jpg'
 const CareerCareSection = () => {
   return (
     <div>
-      <section className='bg-white text-center py-8 px-4 lg:pt-36 xl:pt-60 lg:pb-20  max-w-4xl mx-auto'>
+      <section className='bg-white text-center py-8 px-5 lg:pt-36 xl:pt-60 lg:pb-20  max-w-4xl mx-auto'>
         {/* Title */}
         <h2 className='text-2xl md:text-[40px] md:leading-[40px] font-bold text-[#040940] mb-4'>
           Career Care
         </h2>
 
         {/* Description */}
-        <p className='text-sm md:text-[18px] font-medium text-[#717680] mb-6 leading-[24px] max-w-2xl mx-auto'>
+        <p className='text-sm md:text-[18px] font-medium text-[#717680] mb-6 leading-[24px] max-w-4xl mx-auto'>
           Whether you’re aiming for a dream job or a global research seat we
           help you get there. From local career shifts to international
           placements, we guide your next big move with purpose and strategy.
