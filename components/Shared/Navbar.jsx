@@ -95,7 +95,7 @@ const Navbar = () => {
           </div>
 
           <a
-            href='#'
+            href='/hackathon'
             onClick={() => setActive('Hackathon')}
             className={navItemClass('Hackathon')}
           >
