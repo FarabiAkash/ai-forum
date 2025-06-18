@@ -4,126 +4,137 @@ import { FaFacebookF, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <footer className='bg-white text-sm text-gray-600 px-4'>
-      {/* Top Footer */}
-      <div className='max-w-7xl mx-auto py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-16'>
-        {/* Logo & Description */}
-        <div className='col-span-2'>
-          <Image
-            src={logo}
-            alt='AI Forum Bangladesh Logo'
-            className='w-40 mb-4'
-          />
-          <p className='text-gray-500'>
-            AI Forum Bangladesh is an independent
-            <br /> NGO that promotes AI for everyone.
-          </p>
+    <footer>
+      <div className='bg-white text-sm text-gray-600 px-5'>
+        {/* Top Footer */}
+        <div className='max-w-7xl mx-auto py-12 flex flex-wrap justify-start md:justify-around 2xl:justify-between items-center gap-8 sm:gap-16 2xl:gap-10'>
+          {/* Logo & Description */}
+          <div>
+            <Image
+              src={logo}
+              alt='AI Forum Bangladesh Logo'
+              className='w-40 '
+            />
+            <p className='text-[#717680] text-base leading-[24px]'>
+              AI Forum Bangladesh is an independent
+              <br />
+              NGO that promotes AI for everyone.
+            </p>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h4 className='font-semibold text-[#717680] mb-2 leading-[20px]'>
+              Company
+            </h4>
+            <ul className='space-y-2 font-semibold text-[#535862] mb-2 leading-[20px]'>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  About us
+                </a>
+              </li>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Our Work */}
+          <div>
+            <h4 className='font-semibold text-[#717680] mb-2 leading-[20px]'>
+              Our Work
+            </h4>
+            <ul className='space-y-2 font-semibold text-[#535862] mb-2 leading-[20px]'>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Building Innovation Ecosystem
+                </a>
+              </li>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Career Care
+                </a>
+              </li>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Academy of Intelligences
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Social */}
+          <div>
+            <h4 className='font-semibold text-[#717680] mb-2 leading-[20px]'>
+              Social
+            </h4>
+            <ul className='space-y-2 font-semibold text-[#535862] mb-2 leading-[20px]'>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Facebook
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 className='font-semibold text-[#717680] mb-2 leading-[20px]'>
+              Legal
+            </h4>
+            <ul className='space-y-2 font-semibold text-[#535862] mb-2 leading-[20px]'>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a href='#' className='hover:text-black'>
+                  Cookies
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        {/* Company */}
-        <div>
-          <h4 className='font-medium text-gray-500 mb-2'>Company</h4>
-          <ul className='space-y-2 text-gray-700 font-medium'>
-            <li>
-              <a href='#' className='hover:text-black'>
-                About us
-              </a>
-            </li>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Careers
-              </a>
-            </li>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Contact us
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Our Work */}
-        <div className='w-[350px]'>
-          <h4 className='font-medium text-gray-500 mb-2'>Our Work</h4>
-          <ul className='space-y-2 text-gray-700 font-medium'>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Building Innovation Ecosystem
-              </a>
-            </li>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Career Care
-              </a>
-            </li>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Academy of Intelligences
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Social */}
-        <div>
-          <h4 className='font-medium text-gray-500 mb-2'>Social</h4>
-          <ul className='space-y-2 text-gray-700 font-medium'>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a href='#' className='hover:text-black'>
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Facebook
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Legal */}
-        <div>
-          <h4 className='font-medium text-gray-500 mb-2'>Legal</h4>
-          <ul className='space-y-2 text-gray-700 font-medium'>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Terms
-              </a>
-            </li>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Privacy
-              </a>
-            </li>
-            <li>
-              <a href='#' className='hover:text-black'>
-                Cookies
-              </a>
-            </li>
-          </ul>
-        </div>
+        {/* Bottom Bar */}
       </div>
-
-      {/* Bottom Bar */}
-      <div className='bg-gray-50 py-4 px-4'>
-        <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-4'>
-          <p className='text-xs text-gray-500'>
+      <div className='bg-gray-50 py-4 px-5'>
+        <div className='max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4'>
+          <p className='text-base text-[#717680] text-center md:text-left'>
             © 2025 AI Forum Bangladesh. All rights reserved.
           </p>
-          <div className='flex gap-4 text-gray-400 text-lg md:justify-end'>
+          <div className='flex gap-4 text-[#A4A7AE] text-lg'>
             <a href='#' className='hover:text-black'>
-              <FaXTwitter />
+              <FaXTwitter size={22} />
             </a>
             <a href='#' className='hover:text-black'>
-              <FaLinkedinIn />
+              <FaLinkedinIn size={22} />
             </a>
             <a href='#' className='hover:text-black'>
-              <FaFacebookF />
+              <FaFacebookF size={22} />
             </a>
           </div>
         </div>
