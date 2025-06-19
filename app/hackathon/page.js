@@ -1,3 +1,4 @@
+import OngoingUpcomingHackathons from '@/components/Hackathon/OngoingUpcomingHacathons'
 import CommonBanner from '@/components/Shared/CommonBanner'
 import CustomBreadcrumbs from '@/components/Shared/CustomBreadcrumbs'
 import bannerImg from '@/public/assets/hackathon/banner.png'
@@ -13,9 +14,7 @@ const page = () => {
                 rootRoute={'Home'}
                 subRoute={'Hackathon'}
             />
-            <div className='h-screen'>
-
-            </div>
+            <OngoingUpcomingHackathons />
         </div>
     )
 }
