@@ -15,7 +15,7 @@ const OngoingUpcomingHackathons = () => {
       </h2>
 
       {/* Ongoing */}
-      <div className='flex justify-between items-center'>
+      <div className='flex flex-col sm:flex-row gap-5 sm:gap-4 justify-between items-center'>
         {ongoingHackathons.length > 0 && (
           <>
             {ongoingHackathons.map(item => (

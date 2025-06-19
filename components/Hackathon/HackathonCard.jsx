@@ -44,12 +44,12 @@ const HackathonCard = ({
   }
 
   return (
-    <div className='bg-[#FFFFFF]  overflow-hidden'>
-      <div className='p-4'>
+    <div className='bg-[#FFFFFF] overflow-hidden border border-[#0000000D]'>
+      <div className='p-4 sm:p-5 rounded-[1px]'>
         <Image
           src={hackathonBanner}
           alt={hackathonTitle}
-          className='w-full h-48 object-cover'
+          className='w-full h-48 object-cover rounded-[1px]'
           width={500}
           height={300}
         />
@@ -76,7 +76,7 @@ const HackathonCard = ({
           </p>
 
           {/* footer */}
-          <div className='flex justify-between items-center'>
+          <div className='flex flex-wrap justify-between items-center'>
             {/* Date & Location */}
             <div className='mt-4 flex flex-col items-start text-sm text-[#717680] leading-[24px] font-normal'>
               <div className='flex items-center gap-1'>
