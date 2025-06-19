@@ -9,7 +9,7 @@ const OngoingUpcomingHackathons = () => {
     item => item.hackathonType === 'upcoming'
   )
   return (
-    <section className='py-10 px-5 max-w-7xl mx-auto bg-gray-50'>
+    <section className='py-4 px-5 max-w-7xl mx-auto'>
       <h2 className='text-xl font-semibold mb-6 leading-[24px]'>
         Ongoing & Upcoming Hackathons
       </h2>
