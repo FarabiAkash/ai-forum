@@ -1,4 +1,6 @@
+import HackathonGallery from '@/components/Hackathon/HackathonGallery'
 import OngoingUpcomingHackathons from '@/components/Hackathon/OngoingUpcomingHacathons'
+import PreviousHackathons from '@/components/Hackathon/PreviousHackathons'
 import CommonBanner from '@/components/Shared/CommonBanner'
 import CustomBreadcrumbs from '@/components/Shared/CustomBreadcrumbs'
 import bannerImg from '@/public/assets/hackathon/banner.png'
@@ -15,6 +17,8 @@ const page = () => {
                 subRoute={'Hackathon'}
             />
             <OngoingUpcomingHackathons />
+            <PreviousHackathons />
+            <HackathonGallery />
         </div>
     )
 }
