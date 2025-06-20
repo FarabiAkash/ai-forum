@@ -6,6 +6,7 @@ import { GoCalendar, GoLocation } from 'react-icons/go'
 import HackathonDetailsBanner from '@/components/Hackathon/Details/HackathonDetailsBanner'
 import CustomBreadcrumbs from '@/components/Shared/CustomBreadcrumbs'
 import HackathonDetailsContent from '@/components/Hackathon/Details/HackathonDetailsContent'
+import RegistrationBottom from '@/components/Hackathon/Details/RegistrationBottom'
 
 const HackathonDetailsPage = () => {
     const { id } = useParams()
@@ -42,6 +43,7 @@ const HackathonDetailsPage = () => {
             />
 
             <HackathonDetailsContent />
+            <RegistrationBottom />
         </section>
     )
 }
