@@ -1,4 +1,5 @@
 import HackathonGallery from '@/components/Hackathon/HackathonGallery'
+import ImpactStats from '@/components/Hackathon/ImpactStats'
 import OngoingUpcomingHackathons from '@/components/Hackathon/OngoingUpcomingHacathons'
 import PreviousHackathons from '@/components/Hackathon/PreviousHackathons'
 import CommonBanner from '@/components/Shared/CommonBanner'
@@ -19,6 +20,7 @@ const page = () => {
             <OngoingUpcomingHackathons />
             <PreviousHackathons />
             <HackathonGallery />
+            <ImpactStats />
         </div>
     )
 }
