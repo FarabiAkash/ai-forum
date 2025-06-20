@@ -5,9 +5,8 @@ import React from 'react'
 const page = () => {
     return (
         <>
-            <Banner />
-            <div className="bg-[#FAFAFA] min-h-screen flex flex-col items-center">
-                <h2 className="text-center text-[40px] font-bold leading-[56px] text-[#3039E5] pt-20">
+            <div className="bg-[#FAFAFA]  flex flex-col items-center">
+                <h2 className="text-center text-[40px] font-bold leading-[56px] text-[#3039E5] pt-50">
                     CodeCure 2025: Innovating Digital Health
                 </h2>
                 <p className="text-center font-[400] text-[18px] leading-[32px] text-[#181D27] pt-2">
