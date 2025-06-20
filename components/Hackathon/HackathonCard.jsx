@@ -1,8 +1,11 @@
+'use client'
 import Image from 'next/image'
 import { LuBellRing } from 'react-icons/lu'
 import { FaArrowRight } from 'react-icons/fa6'
+import { useRouter } from 'next/navigation'
 
 const HackathonCard = ({
+  id,
   hackathonBanner,
   hackathonType,
   hackathonTitle,
@@ -10,6 +13,8 @@ const HackathonCard = ({
   hackathonDate,
   hackathonVenue
 }) => {
+  const router = useRouter()
+
   // Badge text and color
   const badgeMap = {
     ongoing: {
@@ -45,7 +50,10 @@ const HackathonCard = ({
 
   return (
     <div className='bg-[#FFFFFF] overflow-hidden border border-[#0000000D]'>
-      <div className='p-4 sm:p-5 rounded-[1px]'>
+      <div
+        className='p-4 sm:p-5 rounded-[1px]'
+        onClick={() => router.push(`/hackathon/${id}`)}
+      >
         <Image
           src={hackathonBanner}
           alt={hackathonTitle}

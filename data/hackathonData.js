@@ -6,7 +6,6 @@ import h5Img from '@/public/assets/hackathon/h5.png'
 import h6Img from '@/public/assets/hackathon/h6.png'
 
 const hackathonData = [
-    // ✅ Ongoing
     {
         id: 1,
         hackathonType: 'ongoing',
@@ -16,12 +15,16 @@ const hackathonData = [
             'Tackle pressing challenges in healthcare with tech-driven solutions that make an impact.',
         hackathonDate: 'May 18, 2025',
         hackathonVenue: 'Rajshahi University Auditorium, Rajshahi',
-        hackathonBanner: h1Img, // replace with actual path
+        hackathonBanner: h1Img,
         ctaLabel: 'Register',
-        ctaType: 'primary'
+        ctaType: 'primary',
+        prize: {
+            firstPlace: '$5,000',
+            secondPlace: '$2,000',
+            thirdPlace: '$1,000'
+        },
+        organizer: 'HealthHack Alliance in partnership with CMED'
     },
-
-    // ✅ Upcoming
     {
         id: 2,
         hackathonType: 'upcoming',
@@ -33,10 +36,14 @@ const hackathonData = [
         hackathonVenue: 'Rajshahi University Auditorium, Rajshahi',
         hackathonBanner: h2Img,
         ctaLabel: 'Get Notified',
-        ctaType: 'outline'
+        ctaType: 'outline',
+        prize: {
+            firstPlace: '$5,000',
+            secondPlace: '$2,000',
+            thirdPlace: '$1,000'
+        },
+        organizer: 'HealthHack Alliance in partnership with CMED'
     },
-
-    // ✅ Ended #1
     {
         id: 3,
         hackathonType: 'ended',
@@ -48,10 +55,14 @@ const hackathonData = [
         hackathonVenue: 'University of Dhaka, Dhaka',
         hackathonBanner: h3Img,
         ctaLabel: 'Gallery',
-        ctaType: 'outline'
+        ctaType: 'outline',
+        prize: {
+            firstPlace: '$5,000',
+            secondPlace: '$2,000',
+            thirdPlace: '$1,000'
+        },
+        organizer: 'AI Med Lab · CMED · MedTech Founders'
     },
-
-    // ✅ Ended #2
     {
         id: 4,
         hackathonType: 'ended',
@@ -63,10 +74,14 @@ const hackathonData = [
         hackathonVenue: 'BUET Auditorium Complex, Dhaka',
         hackathonBanner: h4Img,
         ctaLabel: 'Gallery',
-        ctaType: 'outline'
+        ctaType: 'outline',
+        prize: {
+            firstPlace: '$4,000',
+            secondPlace: '$1,500',
+            thirdPlace: '$800'
+        },
+        organizer: 'AgroTech Bangladesh & BRRI'
     },
-
-    // ✅ Ended #3
     {
         id: 5,
         hackathonType: 'ended',
@@ -78,10 +93,14 @@ const hackathonData = [
         hackathonVenue: 'Brac University Campus, Dhaka',
         hackathonBanner: h5Img,
         ctaLabel: 'Gallery',
-        ctaType: 'outline'
+        ctaType: 'outline',
+        prize: {
+            firstPlace: '$3,500',
+            secondPlace: '$1,200',
+            thirdPlace: '$600'
+        },
+        organizer: 'Digital School Alliance & Brac EDU Lab'
     },
-
-    // ✅ Ended #4
     {
         id: 6,
         hackathonType: 'ended',
@@ -93,7 +112,13 @@ const hackathonData = [
         hackathonVenue: 'North South University, Dhaka',
         hackathonBanner: h6Img,
         ctaLabel: 'Gallery',
-        ctaType: 'outline'
+        ctaType: 'outline',
+        prize: {
+            firstPlace: '$4,500',
+            secondPlace: '$1,800',
+            thirdPlace: '$1,000'
+        },
+        organizer: 'FinTech Bangladesh, NSU Business Club'
     }
 ]
 
