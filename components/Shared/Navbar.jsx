@@ -3,34 +3,37 @@
 import React, { useState } from 'react'
 import { FiMenu, FiX, FiChevronDown, FiChevronUp } from 'react-icons/fi'
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 // Logos
 import defaultLogo from '@/public/assets/AIFB-Logo-White.svg'
-import registerLogo from '@/public/assets/AIFB-Logo-Blue.svg' // <- your alternate logo
+import registerLogo from '@/public/assets/AIFB-Logo-Blue.svg'
 
 const Navbar = () => {
   const pathname = usePathname()
+  const router = useRouter()
   const [isOpen, setIsOpen] = useState(false)
   const [workOpen, setWorkOpen] = useState(false)
-  const [active, setActive] = useState('Home')
 
   const isRegisterPage = pathname.startsWith('/hackathon/register')
 
-  const navItemClass = label =>
+  const navItemClass = href =>
     `relative pb-1 ${
-      active === label ? 'border-b-2 border-indigo-500' : ''
+      pathname === href ? 'border-b-2 border-indigo-500' : ''
     } hover:text-${isRegisterPage ? 'gray-700' : 'gray-300'}`
 
   return (
     <header
-      className={`w-full z-50 fixed top-0 left-0 border-b-[0.5px] border-gray-300 ${
+      className={`w-full z-50 fixed top-0 left-0 border-b-[0.5px] ${
         isRegisterPage ? 'bg-white text-black' : 'bg-black/10 text-white'
       }`}
     >
       <div className='max-w-7xl mx-auto px-4 py-4 flex justify-between items-center'>
         {/* Logo */}
-        <div className='w-[150px] h-[40px]'>
+        <div
+          className='w-[150px] h-[40px] cursor-pointer'
+          onClick={() => router.push('/')}
+        >
           <Image
             className='w-full h-full object-cover'
             src={isRegisterPage ? registerLogo : defaultLogo}
@@ -40,18 +43,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <nav className='hidden md:flex gap-8 font-medium uppercase text-sm relative'>
-          <a
-            href='#'
-            onClick={() => setActive('Home')}
-            className={navItemClass('Home')}
-          >
+          <a href='/' className={navItemClass('/')}>
             Home
           </a>
-          <a
-            href='#'
-            onClick={() => setActive('About Us')}
-            className={navItemClass('About Us')}
-          >
+          <a href='/about-us' className={navItemClass('/about-us')}>
             About Us
           </a>
 
@@ -70,13 +65,10 @@ const Navbar = () => {
             }}
           >
             <button
-              onClick={() => {
-                setWorkOpen(!workOpen)
-                setActive('Our Work')
-              }}
-              className={`flex items-center gap-1 ${navItemClass('Our Work')}`}
+              onClick={() => setWorkOpen(!workOpen)}
+              className={`flex items-center gap-1 ${navItemClass('/our-work')}`}
             >
-              Our Work{' '}
+              Our Work
               {workOpen ? (
                 <FiChevronUp size={14} />
               ) : (
@@ -84,43 +76,43 @@ const Navbar = () => {
               )}
             </button>
 
-            {/* Dropdown Menu */}
             {workOpen && (
               <div
                 className='absolute top-full left-0 mt-2 bg-white text-black text-sm font-normal shadow-md rounded-sm py-3 w-64 z-50'
                 onMouseEnter={() => clearTimeout(window._dropdownTimeout)}
                 onMouseLeave={() => setWorkOpen(false)}
               >
-                <a href='#' className='block px-5 py-2 hover:bg-gray-100'>
+                <a
+                  href='/innovation-ecosystem'
+                  className='block px-5 py-2 hover:bg-gray-100'
+                >
                   Building Innovation Ecosystem
                 </a>
-                <a href='#' className='block px-5 py-2 hover:bg-gray-100'>
+                <a
+                  href='/ai-academy'
+                  className='block px-5 py-2 hover:bg-gray-100'
+                >
                   AI Academy
                 </a>
-                <a href='#' className='block px-5 py-2 hover:bg-gray-100'>
+                <a
+                  href='/career-care'
+                  className='block px-5 py-2 hover:bg-gray-100'
+                >
                   Career Care
                 </a>
               </div>
             )}
           </div>
 
-          <a
-            href='/hackathon'
-            onClick={() => setActive('Hackathon')}
-            className={navItemClass('Hackathon')}
-          >
+          <a href='/hackathon' className={navItemClass('/hackathon')}>
             Hackathon
           </a>
-          <a
-            href='#'
-            onClick={() => setActive('Contact Us')}
-            className={navItemClass('Contact Us')}
-          >
+          <a href='/contact-us' className={navItemClass('/contact-us')}>
             Contact Us
           </a>
         </nav>
 
-        {/* Hamburger */}
+        {/* Mobile Hamburger */}
         <div className='md:hidden'>
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -138,44 +130,45 @@ const Navbar = () => {
           }`}
         >
           <nav className='flex flex-col gap-4 uppercase text-sm font-medium'>
-            <a
-              href='#'
-              className={`hover:text-${
-                isRegisterPage ? 'gray-700' : 'gray-300'
-              }`}
-            >
+            <a href='/' className='hover:opacity-80'>
               Home
             </a>
-            <a
-              href='#'
-              className={`hover:text-${
-                isRegisterPage ? 'gray-700' : 'gray-300'
-              }`}
-            >
+            <a href='/about-us' className='hover:opacity-80'>
               About Us
             </a>
-            <a
-              href='#'
-              className={`hover:text-${
-                isRegisterPage ? 'gray-700' : 'gray-300'
-              }`}
-            >
-              Our Work
-            </a>
-            <a
-              href='#'
-              className={`hover:text-${
-                isRegisterPage ? 'gray-700' : 'gray-300'
-              }`}
-            >
+
+            {/* Our Work Dropdown (Mobile) */}
+            <div>
+              <button
+                onClick={() => setWorkOpen(!workOpen)}
+                className='flex justify-between items-center w-full hover:opacity-80'
+              >
+                <span>Our Work</span>
+                {workOpen ? (
+                  <FiChevronUp size={18} />
+                ) : (
+                  <FiChevronDown size={18} />
+                )}
+              </button>
+              {workOpen && (
+                <div className='pl-4 mt-2 flex flex-col gap-2 text-sm'>
+                  <a href='/innovation-ecosystem' className='hover:opacity-80'>
+                    Building Innovation Ecosystem
+                  </a>
+                  <a href='/ai-academy' className='hover:opacity-80'>
+                    AI Academy
+                  </a>
+                  <a href='/career-care' className='hover:opacity-80'>
+                    Career Care
+                  </a>
+                </div>
+              )}
+            </div>
+
+            <a href='/hackathon' className='hover:opacity-80'>
               Hackathon
             </a>
-            <a
-              href='#'
-              className={`hover:text-${
-                isRegisterPage ? 'gray-700' : 'gray-300'
-              }`}
-            >
+            <a href='/contact-us' className='hover:opacity-80'>
               Contact Us
             </a>
           </nav>
