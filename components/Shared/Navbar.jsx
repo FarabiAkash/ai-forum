@@ -3,26 +3,37 @@
 import React, { useState } from 'react'
 import { FiMenu, FiX, FiChevronDown, FiChevronUp } from 'react-icons/fi'
 import Image from 'next/image'
-import logo from '@/public/assets/AIFB-Logo-White.svg'
+import { usePathname } from 'next/navigation'
+
+// Logos
+import defaultLogo from '@/public/assets/AIFB-Logo-White.svg'
+import registerLogo from '@/public/assets/AIFB-Logo-Blue.svg' // <- your alternate logo
 
 const Navbar = () => {
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
   const [workOpen, setWorkOpen] = useState(false)
   const [active, setActive] = useState('Home')
 
+  const isRegisterPage = pathname.startsWith('/hackathon/register')
+
   const navItemClass = label =>
     `relative pb-1 ${
       active === label ? 'border-b-2 border-indigo-500' : ''
-    } hover:text-gray-300`
+    } hover:text-${isRegisterPage ? 'gray-700' : 'gray-300'}`
 
   return (
-    <header className='bg-black/10 text-white w-full z-50 fixed top-0 left-0 border-b-[0.5px] border-gray-300'>
+    <header
+      className={`w-full z-50 fixed top-0 left-0 border-b-[0.5px] border-gray-300 ${
+        isRegisterPage ? 'bg-white text-black' : 'bg-black/10 text-white'
+      }`}
+    >
       <div className='max-w-7xl mx-auto px-4 py-4 flex justify-between items-center'>
         {/* Logo */}
         <div className='w-[150px] h-[40px]'>
           <Image
             className='w-full h-full object-cover'
-            src={logo}
+            src={isRegisterPage ? registerLogo : defaultLogo}
             alt='AI Forum Bangladesh Logo'
           />
         </div>
@@ -52,7 +63,6 @@ const Navbar = () => {
               setWorkOpen(true)
             }}
             onMouseLeave={() => {
-              // Delay closing so user can move into dropdown
               window._dropdownTimeout = setTimeout(
                 () => setWorkOpen(false),
                 200
@@ -120,21 +130,52 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className='md:hidden bg-black bg-opacity-90 px-4 pb-4'>
+        <div
+          className={`md:hidden px-4 pb-4 ${
+            isRegisterPage
+              ? 'bg-white text-black'
+              : 'bg-black bg-opacity-90 text-white'
+          }`}
+        >
           <nav className='flex flex-col gap-4 uppercase text-sm font-medium'>
-            <a href='#' className='hover:text-gray-300'>
+            <a
+              href='#'
+              className={`hover:text-${
+                isRegisterPage ? 'gray-700' : 'gray-300'
+              }`}
+            >
               Home
             </a>
-            <a href='#' className='hover:text-gray-300'>
+            <a
+              href='#'
+              className={`hover:text-${
+                isRegisterPage ? 'gray-700' : 'gray-300'
+              }`}
+            >
               About Us
             </a>
-            <a href='#' className='hover:text-gray-300'>
+            <a
+              href='#'
+              className={`hover:text-${
+                isRegisterPage ? 'gray-700' : 'gray-300'
+              }`}
+            >
               Our Work
             </a>
-            <a href='#' className='hover:text-gray-300'>
+            <a
+              href='#'
+              className={`hover:text-${
+                isRegisterPage ? 'gray-700' : 'gray-300'
+              }`}
+            >
               Hackathon
             </a>
-            <a href='#' className='hover:text-gray-300'>
+            <a
+              href='#'
+              className={`hover:text-${
+                isRegisterPage ? 'gray-700' : 'gray-300'
+              }`}
+            >
               Contact Us
             </a>
           </nav>

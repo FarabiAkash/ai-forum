@@ -48,24 +48,31 @@ const HackathonCard = ({
     }
   }
 
+  const handleRegister = type => {
+    if (type === 'Register') {
+      router.push(`/hackathon/register/${id}`)
+    }
+  }
+
   return (
     <div className='bg-[#FFFFFF] overflow-hidden border border-[#0000000D]'>
-      <div
-        className='p-4 sm:p-5 rounded-[1px]'
-        onClick={() => router.push(`/hackathon/${id}`)}
-      >
+      <div className='p-4 sm:p-5 rounded-[1px]'>
         <Image
           src={hackathonBanner}
           alt={hackathonTitle}
-          className='w-full h-48 object-cover rounded-[1px]'
+          className='w-full h-48 object-cover rounded-[1px] cursor-pointer'
           width={500}
           height={300}
+          onClick={() => router.push(`/hackathon/${id}`)}
         />
 
         {/* Content */}
         <div className='mt-3'>
           {/* Status Badge */}
-          <div className='mb-1'>
+          <div
+            className='mb-1  cursor-pointer'
+            onClick={() => router.push(`/hackathon/${id}`)}
+          >
             <span
               className={`inline-block text-xs font-medium px-2 py-1 rounded-[4px] ${
                 badgeMap[hackathonType]?.className || 'text-gray-500'
@@ -76,17 +83,26 @@ const HackathonCard = ({
           </div>
 
           {/* Title & Description */}
-          <h3 className='text-[18px] font-bold text-[#040940] leading-[24px] mb-1'>
+          <h3
+            className='text-[18px] font-bold text-[#040940] leading-[24px] mb-1  cursor-pointer'
+            onClick={() => router.push(`/hackathon/${id}`)}
+          >
             {hackathonTitle}
           </h3>
-          <p className='text-sm text-[#181D27] leading-[16px]'>
+          <p
+            className='text-sm text-[#181D27] leading-[16px]  cursor-pointer'
+            onClick={() => router.push(`/hackathon/${id}`)}
+          >
             {hackathonSubtitle}
           </p>
 
           {/* footer */}
           <div className='flex flex-wrap justify-between items-center'>
             {/* Date & Location */}
-            <div className='mt-4 flex flex-col items-start text-sm text-[#717680] leading-[24px] font-normal'>
+            <div
+              className='mt-4 flex flex-col items-start text-sm text-[#717680] leading-[24px] font-normal cursor-pointer'
+              onClick={() => router.push(`/hackathon/${id}`)}
+            >
               <div className='flex items-center gap-1'>
                 <FaArrowRight size={15} />
                 {hackathonDate}
@@ -98,12 +114,13 @@ const HackathonCard = ({
             </div>
 
             {/* Button */}
-            <div className='mt-4 text-right'>
+            <div className='mt-4 text-right  !cursor-pointer'>
               <button
                 className={`min-w-[145px] px-4 py-[10px] ${
                   buttonMap[hackathonType]?.className ||
                   'bg-gray-100 text-gray-800'
                 }`}
+                onClick={() => handleRegister(buttonMap[hackathonType]?.label)}
               >
                 {buttonMap[hackathonType]?.icon}
                 {buttonMap[hackathonType]?.label || 'Learn More'}

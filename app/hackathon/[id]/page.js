@@ -31,6 +31,7 @@ const HackathonDetailsPage = () => {
         <section className='bg-[#FAFAFA]'>
             {/* Header */}
             <HackathonDetailsBanner
+                id={id}
                 hackathonBanner={hackathonBanner}
                 hackathonTitle={hackathonTitle}
                 hackathonType={hackathonType}

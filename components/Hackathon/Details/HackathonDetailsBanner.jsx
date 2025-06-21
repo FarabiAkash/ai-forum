@@ -1,12 +1,16 @@
+'use client'
+import { useRouter } from 'next/navigation'
 import WinnerCard from './WinnerCard'
 
 const HackathonDetailsBanner = ({
+  id,
   hackathonBanner,
   hackathonType,
   hackathonTitle,
   prize,
   organizer
 }) => {
+  const router = useRouter()
   return (
     <div
       className='relative w-full sm:h-[640px] bg-cover bg-center bg-no-repeat text-white'
@@ -49,7 +53,10 @@ const HackathonDetailsBanner = ({
 
               {/* Register button only for ongoing */}
               {hackathonType === 'ongoing' && (
-                <button className='bg-[#FFCF30] hover:bg-yellow-500 transition text-black font-semibold px-6 py-[17px] rounded-[1px]'>
+                <button
+                  className='bg-[#FFCF30] hover:bg-yellow-500 transition text-black font-semibold px-6 py-[17px] rounded-[1px]'
+                  onClick={() => router.push(`/hackathon/register/${id}`)}
+                >
                   REGISTER NOW
                 </button>
               )}
