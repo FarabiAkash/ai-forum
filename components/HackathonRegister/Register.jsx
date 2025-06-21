@@ -107,7 +107,10 @@ const Register = () => {
     if (file && file.type !== 'application/vnd.openxmlformats-officedocument.presentationml.presentation') {
       toast.error('Please upload a valid .pptx file');
       setFile(null);
+      return;
     }
+    setFile(file);
+    toast.success('File uploaded successfully');
   };
 
   return (
