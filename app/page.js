@@ -7,12 +7,12 @@ import StayInLoop from "@/components/Home/StayInLoop";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Banner />
       <InnovationSection />
       <CareerCareSection />
       <AiAcademy />
       <StayInLoop />
-    </div>
+    </>
   );
 }
