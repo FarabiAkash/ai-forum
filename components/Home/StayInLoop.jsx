@@ -1,43 +1,57 @@
+'use client'
+
+import { useState } from 'react'
+import toast from 'react-hot-toast'
+
 const StayInLoop = () => {
+  const [email, setEmail] = useState('')
+
+  const handleSubscribe = () => {
+    if (!email || !email.includes('@')) {
+      toast.error('Please enter a valid email address', {
+        position: 'top-right'
+      })
+      return
+    }
+
+    toast.success('Thanks for subscribing!', {
+      position: 'top-right'
+    })
+    setEmail('')
+  }
+
   return (
-    <section className='bg-[#00000008] px-4 py-20 text-center lg:mt-50 xl:mt-80'>
-      <div className='max-w-xl mx-auto'>
-        {/* Heading */}
-        <h2 className='text-2xl md:text-[40px] md:leading-[48px] font-bold text-[#040940]'>
+    <section className='bg-[#fbfafa] py-12 sm:py-16 px-4'>
+      <div className='max-w-xl mx-auto text-center'>
+        <h2 className='text-3xl md:text-[40px] md:leading-[48px] font-bold text-[#0B0C1A] mb-4'>
           Stay in the Loop
         </h2>
-
-        {/* Description */}
-        <p className='text-sm md:text-base text-[#717680] mb-8'>
+        <p className='text-[#717680] text-base leading-[24px] mb-8'>
           Get updates on upcoming events, new programs, and inspiring stories
-          from <br className='hidden sm:block' />
-          Bangladesh’s AI future.
+          from Bangladesh’s AI future.
         </p>
 
-        {/* Email input + Button */}
-        <form
-          //   onSubmit={e => e.preventDefault()}
-          className='flex flex-col sm:flex-row items-center justify-center gap-3'
-        >
+        <div className='flex items-center justify-center gap-3 sm:gap-4 mb-2'>
           <input
             type='email'
             placeholder='Enter your email'
-            className='px-4 py-[10px] w-full sm:w-[340px] focus:outline-none bg-white border border-[#0000001A] text-[#A4A7AE]'
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            className='w-full sm:w-[280px] px-4 py-3 border border-[#0000001A] bg-white  text-sm outline-none'
           />
           <button
-            type='submit'
-            className='bg-[#3039E5] text-white px-6 py-[10px] text-base font-semibold uppercase hover:bg-[#2f2dff] transition'
+            onClick={handleSubscribe}
+            className='bg-[#3039E5] text-white text-sm font-semibold px-4 sm:px-6 py-3  hover:bg-blue-700 transition'
           >
-            Subscribe
+            SUBSCRIBE
           </button>
-        </form>
-
-        {/* Privacy note */}
-        <p className='text-xs text-gray-500 mt-4'>
+        </div>
+        <p className='text-sm text-[#717680]'>
           We care about your data in our{' '}
-          <a href='#' className='underline hover:text-black'>
+          <a href='#' className='underline font-medium'>
             privacy policy
           </a>
+          .
         </p>
       </div>
     </section>
