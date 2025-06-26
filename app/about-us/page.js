@@ -1,3 +1,4 @@
+import HowWeWork from "@/components/AboutUs/HowWeWork"
 import OurJourney from "@/components/AboutUs/OurJourney"
 import OurPartner from "@/components/AboutUs/OurPartner"
 import CommonBanner from "@/components/Shared/CommonBanner"
@@ -13,6 +14,7 @@ const page = () => {
             />
             <OurJourney />
             <OurPartner />
+            <HowWeWork />
         </>
     )
 }
