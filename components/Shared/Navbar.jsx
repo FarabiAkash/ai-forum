@@ -68,7 +68,7 @@ const Navbar = () => {
               onClick={() => setWorkOpen(!workOpen)}
               className={`flex items-center gap-1 ${navItemClass('/our-work')}`}
             >
-              Our Work
+              OUR WORK
               {workOpen ? (
                 <FiChevronUp size={14} />
               ) : (
