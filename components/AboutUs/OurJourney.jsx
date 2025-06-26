@@ -4,7 +4,7 @@ import journeyImg from '@/public/assets/about-us/our-journey.jpg'
 const OurJourney = () => {
   return (
     <section className='py-16 bg-[#FAFAFA]'>
-      <div className='max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-16 items-center'>
+      <div className='max-w-7xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-16 items-center'>
         {/* Left Image */}
         <div className='w-full h-auto'>
           <Image
