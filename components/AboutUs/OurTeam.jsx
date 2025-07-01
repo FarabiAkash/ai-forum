@@ -1,7 +1,11 @@
+'use client'
 import { ourTeam } from '@/data/ourTeamData'
 import SingleCard from './SingleCard'
+import { useState } from 'react'
+import CustomModal from './CustomModal'
 
 const OurTeam = () => {
+  const [selectedTeam, setSelectedTeam] = useState(null)
   return (
     <section className='py-12 bg-white'>
       <div className='max-w-7xl mx-auto px-5'>
@@ -11,17 +15,24 @@ const OurTeam = () => {
           execution for a smarter, more innovative tomorrow.
         </p>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 justify-items-center'>
-          {ourTeam.map((advisor, index) => (
+          {ourTeam.map((member, index) => (
             <SingleCard
               key={index}
-              name={advisor.name}
-              image={advisor.image}
-              description={advisor.description}
+              name={member.name}
+              image={member.image}
+              description={member.description}
               isTeam={true}
+              team={member}
+              setSelectedTeam={setSelectedTeam}
             />
           ))}
         </div>
       </div>
+      <CustomModal
+        isOpen={!!selectedTeam}
+        team={selectedTeam}
+        onClose={() => setSelectedTeam(null)}
+      />
     </section>
   )
 }

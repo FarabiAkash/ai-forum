@@ -1,7 +1,12 @@
+'use client'
 import { advisors } from '@/data/advisorsData'
 import SingleCard from './SingleCard'
+import { useState } from 'react'
+import CustomModal from './CustomModal'
 
 const OurAdvisor = () => {
+  const [selectedAdvisor, setSelectedAdvisor] = useState(null)
+
   return (
     <section className='py-12 bg-[#FAFAFA]'>
       <div className='max-w-7xl mx-auto px-5'>
@@ -19,10 +24,17 @@ const OurAdvisor = () => {
               image={advisor.image}
               description={advisor.description}
               isTeam={false}
+              setSelectedTeam={setSelectedAdvisor}
+              team={advisor}
             />
           ))}
         </div>
       </div>
+      <CustomModal
+        isOpen={!!selectedAdvisor}
+        team={selectedAdvisor}
+        onClose={() => setSelectedAdvisor(null)}
+      />
     </section>
   )
 }
