@@ -3,6 +3,8 @@ import OurJourney from "@/components/AboutUs/OurJourney"
 import OurPartner from "@/components/AboutUs/OurPartner"
 import CommonBanner from "@/components/Shared/CommonBanner"
 import bannerImg from '@/public/assets/about-us/banner.jpg'
+import OurAdvisor from "@/components/AboutUs/OurAdvisor"
+import OurTeam from "@/components/AboutUs/OurTeam"
 
 const page = () => {
     return (
@@ -14,6 +16,8 @@ const page = () => {
             />
             <OurJourney />
             <OurPartner />
+            <OurAdvisor />
+            <OurTeam />
             <HowWeWork />
         </>
     )

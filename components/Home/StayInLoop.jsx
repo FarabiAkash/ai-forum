@@ -21,7 +21,7 @@ const StayInLoop = () => {
   }
 
   return (
-    <section className='bg-[#fbfafa] py-12 sm:py-16 px-4'>
+    <section className='bg-[#fbfafa] py-12 sm:py-16 px-4 xl:mt-56'>
       <div className='max-w-xl mx-auto text-center'>
         <h2 className='text-3xl md:text-[40px] md:leading-[48px] font-bold text-[#0B0C1A] mb-4'>
           Stay in the Loop
