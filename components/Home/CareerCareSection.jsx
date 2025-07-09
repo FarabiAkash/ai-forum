@@ -4,7 +4,7 @@ import careerImg from '@/public/assets/home/CareerCare.jpg'
 
 const CareerCareSection = () => {
   return (
-    <div>
+    <div className='flex flex-col-reverse sm:flex-col'>
       <section className='bg-white text-center py-8 px-5 lg:pt-36 xl:pt-60 lg:pb-20  max-w-4xl mx-auto'>
         {/* Title */}
         <h2 className='text-2xl md:text-[40px] md:leading-[40px] font-bold text-[#040940] mb-4'>
@@ -27,11 +27,13 @@ const CareerCareSection = () => {
         </a>
       </section>
       <div className='lg:relative lg:mt-44 lg:h-[320px] bg-[#142328]'>
-        <Image
-          src={careerImg}
-          alt='career care image'
-          className='lg:absolute bottom-1/2 lg:left-1/2 lg:translate-x-[-50%] lg:translate-y-[15%] w-full lg:max-w-5xl h-auto'
-        />
+        <div className='overflow-hidden lg:absolute bottom-1/2 lg:left-1/2 lg:translate-x-[-50%] lg:translate-y-[15%] w-full lg:max-w-5xl h-auto '>
+          <Image
+            src={careerImg}
+            alt='career care image'
+            className='w-full h-auto object-contain transition-transform duration-500 ease-in-out hover:scale-109'
+          />
+        </div>
       </div>
     </div>
   )

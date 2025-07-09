@@ -24,6 +24,18 @@ const AiAcademy = () => {
 
         {/* Right Image (Overlapping) */}
         <div className='lg:relative h-full w-full'>
+          <div className=' right-0'>
+            <div className='lg:absolute w-full h-auto  overflow-hidden'>
+              <Image
+                src={AiAcademyImg}
+                alt='AI Academy Illustration'
+                className='w-full h-auto object-cover transition-transform duration-500 ease-in-out hover:scale-109'
+                priority
+              />
+            </div>
+          </div>
+        </div>
+        {/* <div className='lg:relative h-full w-full'>
           <div className='lg:absolute w-full h-full right-0 '>
             <Image
               src={AiAcademyImg}
@@ -32,7 +44,7 @@ const AiAcademy = () => {
               priority
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

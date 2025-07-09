@@ -7,14 +7,16 @@ const InnovationSection = () => {
     <section className='relative bg-[#142328] text-white px-5 py-4 sm:py-8 lg:pt-36 lg:pb-20 overflow-visible'>
       <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 relative z-10 gap-4 lg:gap-12'>
         {/* Image Side */}
-        <div className='relative '>
-          <div className='lg:absolute lg:-top-24  w-full z-10'>
-            <Image
-              src={innovationImg}
-              alt='Building Innovation Ecosystem'
-              className='w-full h-auto lg:max-w-[600px] mx-auto object-contain'
-              priority
-            />
+        <div className='relative'>
+          <div className='lg:absolute lg:-top-24 w-full z-10 flex justify-center'>
+            <div className='overflow-hidden lg:max-w-[600px] w-full'>
+              <Image
+                src={innovationImg}
+                alt='Building Innovation Ecosystem'
+                className='w-full h-auto object-contain transform transition-transform duration-500 ease-in-out hover:scale-109'
+                priority
+              />
+            </div>
           </div>
         </div>
 
