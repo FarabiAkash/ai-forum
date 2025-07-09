@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FiMenu, FiX, FiChevronDown, FiChevronUp } from 'react-icons/fi'
 import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
@@ -12,20 +12,38 @@ import registerLogo from '@/public/assets/AIFB-Logo-Blue.svg'
 const Navbar = () => {
   const pathname = usePathname()
   const router = useRouter()
+
   const [isOpen, setIsOpen] = useState(false)
   const [workOpen, setWorkOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   const isRegisterPage = pathname.startsWith('/hackathon/register')
 
+  // Detect scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const showSolidNav = isRegisterPage || isScrolled
+
   const navItemClass = href =>
     `relative pb-1 ${
-      pathname === href ? 'border-b-2 border-indigo-500' : ''
-    } hover:text-${isRegisterPage ? 'gray-700' : 'gray-300'}`
+      pathname === href
+        ? 'after:absolute after:bottom-[-25px] after:-left-0 after:h-[2px] after:w-full after:bg-[#3039E5] after:content-[""] after:rounded-full'
+        : ''
+    } hover:text-${showSolidNav ? 'gray-700' : 'gray-300'} transition-all`
 
   return (
     <header
-      className={`w-full z-50 fixed top-0 left-0 border-b-[0.5px] ${
-        isRegisterPage ? 'bg-white text-black' : 'bg-black/10 text-white'
+      className={`w-full z-50 fixed top-0 left-0 transition-all duration-300 ${
+        showSolidNav
+          ? 'bg-white text-black'
+          : 'bg-[#0000001A] text-white border-b border-[#FFFFFF40]'
       }`}
     >
       <div className='max-w-7xl mx-auto px-4 py-4 flex justify-between items-center'>
@@ -35,8 +53,8 @@ const Navbar = () => {
           onClick={() => router.push('/')}
         >
           <Image
-            className='w-full h-full object-cover'
-            src={isRegisterPage ? registerLogo : defaultLogo}
+            className='w-full h-full object-contain'
+            src={showSolidNav ? registerLogo : defaultLogo}
             alt='AI Forum Bangladesh Logo'
           />
         </div>
@@ -112,7 +130,7 @@ const Navbar = () => {
           </a>
         </nav>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile Menu Toggle */}
         <div className='md:hidden'>
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -124,9 +142,7 @@ const Navbar = () => {
       {isOpen && (
         <div
           className={`md:hidden px-4 pb-4 ${
-            isRegisterPage
-              ? 'bg-white text-black'
-              : 'bg-black bg-opacity-90 text-white'
+            showSolidNav ? 'bg-white text-black' : 'bg-black/90 text-white'
           }`}
         >
           <nav className='flex flex-col gap-4 uppercase text-sm font-medium'>
@@ -137,7 +153,7 @@ const Navbar = () => {
               About Us
             </a>
 
-            {/* Our Work Dropdown (Mobile) */}
+            {/* Mobile Dropdown */}
             <div>
               <button
                 onClick={() => setWorkOpen(!workOpen)}

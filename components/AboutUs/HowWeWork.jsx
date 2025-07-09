@@ -8,33 +8,34 @@ const HowWeWork = () => {
   const items = [
     {
       icon: <GoPeople size={24} className='text-[#3039E5]' />,
-      title: 'Care about our team',
-      desc: 'Understand what matters to our employees. Give them what they need to do their best work.'
+      title: 'Empower People First',
+      desc: 'We champion youth, founders, and professionals with the support, resources, and belief they need to thrive in an AI-driven world.'
     },
     {
       icon: <IoMdHeartEmpty size={24} className='text-[#3039E5]' />,
-      title: 'Be excellent to each other',
-      desc: 'No games. No bullshit. We rely on our peers to improve. Be open, honest and kind.'
+      title: 'Build with Purpose',
+      desc: 'We create what matters — real-world solutions that solve deep challenges, spark inclusive innovation, and empower the people who need it most.'
     },
     {
       icon: <FaArrowTrendUp size={24} className='text-[#3039E5]' />,
-      title: 'Pride in what we do',
-      desc: 'Value quality and integrity in everything we do. At all times. No exceptions.'
-    },
-    {
-      icon: <FaRegFaceSmile size={24} className='text-[#3039E5]' />,
-      title: "Don't #!&$ the customer",
-      desc: "Understand customers' stated and unstated needs. Make them wildly successful."
-    },
-    {
-      icon: <FiFlag size={24} className='text-[#3039E5]' />,
-      title: 'Do the impossible',
-      desc: 'Be energized by difficult problems. Revel in unknowns. Ask "Why?", but always question, "Why not?"'
+      title: 'Impact Globally',
+      desc: 'We connect grassroots innovation with global standards — blending context, creativity, and strategic reach.'
     },
     {
       icon: <IoFlashOutline size={24} className='text-[#3039E5]' />,
-      title: 'Sweat the small stuff',
-      desc: 'We believe the best products come from the best attention to detail. Sweat the small stuff.'
+      title: 'Chase Curiosity',
+      desc: 'We don’t settle for answers — we chase questions. We test, tinker, and dive deep until something clicks. Curiosity is our method, discovery our habit.'
+    },
+    {
+      icon: <FaRegFaceSmile size={24} className='text-[#3039E5]' />,
+      title: 'Keep It Human',
+      desc: "Tech is only powerful when it's meaningful. We build solutions that respect ethics, reflect empathy, and serve people."
+    },
+
+    {
+      icon: <FiFlag size={24} className='text-[#3039E5]' />,
+      title: 'Collaborate Over Compete',
+      desc: 'We don’t gatekeep ideas. We share, co-create, and grow with partners, teams, and communities around us.'
     }
   ]
 

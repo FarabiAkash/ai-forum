@@ -20,7 +20,7 @@ const page = () => {
             <OngoingUpcomingHackathons />
             <PreviousHackathons />
             <HackathonGallery />
-            <ImpactStats />
+            {/* <ImpactStats /> */}
         </div>
     )
 }

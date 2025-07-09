@@ -24,6 +24,7 @@ const columns = [
 
 const HackathonGallery = () => {
   const [isExpanded, setIsExpanded] = useState(false)
+  const [previewImage, setPreviewImage] = useState(null)
 
   return (
     <section className='py-12 px-5 max-w-7xl mx-auto relative'>
@@ -42,13 +43,14 @@ const HackathonGallery = () => {
         } overflow-hidden`}
       >
         {/* Grid Layout */}
-        <div className='grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
           {columns.map((col, colIndex) => (
             <div key={colIndex} className='flex flex-col gap-4'>
               {col.map((img, imgIndex) => (
                 <div
                   key={imgIndex}
-                  className='relative w-full overflow-hidden rounded-[1px]'
+                  className='relative w-full overflow-hidden rounded-[1px] cursor-pointer'
+                  onClick={() => setPreviewImage(img.src)}
                 >
                   <Image
                     src={img}
@@ -77,6 +79,37 @@ const HackathonGallery = () => {
           >
             LOAD MORE PHOTOS
           </button>
+        </div>
+      )}
+
+      {/* Preview Modal */}
+      {previewImage && (
+        <div
+          className='fixed inset-0 bg-black/90 z-[100] flex items-center justify-center'
+          onClick={() => setPreviewImage(null)}
+        >
+          {/* Image Wrapper */}
+          <div
+            className='relative  w-screen h-screen flex items-start justify-center'
+            onClick={e => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setPreviewImage(null)}
+              className='absolute top-4 right-4 text-white text-4xl z-50 cursor-pointer'
+            >
+              &times;
+            </button>
+
+            {/* Full Image */}
+            <Image
+              src={previewImage}
+              alt='Preview'
+              fill
+              className='object-contain'
+              priority
+            />
+          </div>
         </div>
       )}
     </section>

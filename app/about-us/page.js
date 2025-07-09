@@ -15,7 +15,7 @@ const page = () => {
                 bannerImg={bannerImg}
             />
             <OurJourney />
-            <OurPartner />
+            {/* <OurPartner /> */}
             <OurAdvisor />
             <OurTeam />
             <HowWeWork />
