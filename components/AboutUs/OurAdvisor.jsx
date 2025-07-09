@@ -16,17 +16,22 @@ const OurAdvisor = () => {
           health, sustainability, and entrepreneurship, shaping our path with
           deep expertise and bold perspectives.
         </p>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='flex flex-wrap justify-center gap-x-10 gap-y-12'>
           {advisors.map((advisor, index) => (
-            <SingleCard
+            <div
               key={index}
-              name={advisor.name}
-              image={advisor.image}
-              description={advisor.description}
-              isTeam={false}
-              setSelectedTeam={setSelectedAdvisor}
-              team={advisor}
-            />
+              className='w-full sm:w-[48%] lg:w-[30%] flex justify-center'
+            >
+              <SingleCard
+                key={index}
+                name={advisor.name}
+                image={advisor.image}
+                description={advisor.description}
+                isTeam={false}
+                setSelectedTeam={setSelectedAdvisor}
+                team={advisor}
+              />
+            </div>
           ))}
         </div>
       </div>

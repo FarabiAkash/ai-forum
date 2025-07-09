@@ -26,10 +26,11 @@ const VisitUs = () => {
               Our friendly team is here to help.
             </p>
             <a
-              href='mailto:hi@untitledui.com'
+              href='mailto:aiforumbd@gmail.com'
+              target='_blank'
               className='text-[#3039E5] font-semibold text-base leading-[24px]'
             >
-              hi@untitledui.com
+              aiforumbd@gmail.com
             </a>
           </div>
 
@@ -45,9 +46,8 @@ const VisitUs = () => {
               Come say hello at our office HQ.
             </p>
             <p className='text-[#3039E5] font-semibold text-base leading-[24px] text-center'>
-              100 Smith Street
-              <br />
-              Collingwood VIC 3066 AU
+              Floor #4, House #460, Road #31, Mohakhali DOHS, Dhaka-1206 Dhaka,
+              1206
             </p>
           </div>
 
@@ -61,10 +61,10 @@ const VisitUs = () => {
             </h3>
             <p className='mb-1 text-[#717680]'>Mon–Fri from 8am to 5pm.</p>
             <a
-              href='tel:+1555000000'
+              href='tel:+8801794995001'
               className='text-[#3039E5] font-semibold text-base leading-[24px]'
             >
-              +1 (555) 000–0000
+              +880 1794 995 001
             </a>
           </div>
         </div>

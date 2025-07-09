@@ -14,17 +14,21 @@ const OurTeam = () => {
           Meet the minds crafting AI Forum Bangladesh — where vision meets
           execution for a smarter, more innovative tomorrow.
         </p>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 justify-items-center'>
+        <div className='flex flex-wrap justify-center gap-x-10 gap-y-12'>
           {ourTeam.map((member, index) => (
-            <SingleCard
+            <div
               key={index}
-              name={member.name}
-              image={member.image}
-              description={member.description}
-              isTeam={true}
-              team={member}
-              setSelectedTeam={setSelectedTeam}
-            />
+              className='w-full sm:w-[48%] lg:w-[30%] flex justify-center'
+            >
+              <SingleCard
+                name={member.name}
+                image={member.image}
+                description={member.description}
+                isTeam={true}
+                team={member}
+                setSelectedTeam={setSelectedTeam}
+              />
+            </div>
           ))}
         </div>
       </div>
