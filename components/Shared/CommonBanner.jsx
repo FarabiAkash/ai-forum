@@ -1,6 +1,7 @@
+import Image from 'next/image'
 import { GoArrowRight } from 'react-icons/go'
 
-const CommonBanner = ({ bannerImg, title, description }) => {
+const CommonBanner = ({ bannerImg, title, description, logo }) => {
   return (
     <section
       className='relative w-full h-[500px] bg-cover bg-center bg-no-repeat flex items-start justify-center text-white'
@@ -13,9 +14,19 @@ const CommonBanner = ({ bannerImg, title, description }) => {
 
       {/* Content */}
       <div className='relative z-10 text-center px-4 top-1/2'>
-        <h1 className='text-4xl md:text-5xl mb-4 font-[700] md:leading-[64px]'>
-          {title}
-        </h1>
+        {title === 'logo' ? (
+          <div className='w-[250px] h-[150px] mx-auto'>
+            <Image
+              src={logo}
+              alt={description}
+              className='w-full h-full object-cover'
+            />
+          </div>
+        ) : (
+          <h1 className='text-4xl md:text-5xl mb-4 font-[700] md:leading-[64px]'>
+            {title}
+          </h1>
+        )}
         <p className='text-md md:text-lg mb-4 md:mb-6 md:leading-[24px]  font-sans text-center  max-w-[790px]'>
           {description}
         </p>
