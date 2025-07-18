@@ -1,4 +1,5 @@
 import EcosystemsContainer from "@/components/OurWork/InnovationEcosystem/EcosystemsContainer"
+import OngoingEvents from "@/components/OurWork/InnovationEcosystem/OngoingEvents"
 import CommonBanner from "@/components/Shared/CommonBanner"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs"
 import bannerBg from '@/public/assets/our-work/innovation-ecosystem/banner.jpg'
@@ -63,6 +64,9 @@ const page = () => {
             <EcosystemsContainer
                 ecoSystems={ecoSystems}
             />
+
+            <OngoingEvents />
+
         </div>
     )
 }
