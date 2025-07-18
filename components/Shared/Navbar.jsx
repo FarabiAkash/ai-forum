@@ -101,19 +101,19 @@ const Navbar = () => {
                 onMouseLeave={() => setWorkOpen(false)}
               >
                 <a
-                  href='/innovation-ecosystem'
+                  href='/our-work/innovation-ecosystem'
                   className='block px-5 py-2 hover:bg-gray-100'
                 >
                   Building Innovation Ecosystem
                 </a>
                 <a
-                  href='/ai-academy'
+                  href='/our-work/ai-academy'
                   className='block px-5 py-2 hover:bg-gray-100'
                 >
                   AI Academy
                 </a>
                 <a
-                  href='/career-care'
+                  href='/our-work/career-care'
                   className='block px-5 py-2 hover:bg-gray-100'
                 >
                   Career Care
@@ -168,13 +168,16 @@ const Navbar = () => {
               </button>
               {workOpen && (
                 <div className='pl-4 mt-2 flex flex-col gap-2 text-sm'>
-                  <a href='/innovation-ecosystem' className='hover:opacity-80'>
+                  <a
+                    href='/our-work/innovation-ecosystem'
+                    className='hover:opacity-80'
+                  >
                     Building Innovation Ecosystem
                   </a>
-                  <a href='/ai-academy' className='hover:opacity-80'>
+                  <a href='/our-work/ai-academy' className='hover:opacity-80'>
                     AI Academy
                   </a>
-                  <a href='/career-care' className='hover:opacity-80'>
+                  <a href='/our-work/career-care' className='hover:opacity-80'>
                     Career Care
                   </a>
                 </div>
