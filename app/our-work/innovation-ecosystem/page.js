@@ -1,3 +1,4 @@
+import AchievementCounter from "@/components/OurWork/InnovationEcosystem/AchievementCounter"
 import EcosystemsContainer from "@/components/OurWork/InnovationEcosystem/EcosystemsContainer"
 import OngoingEvents from "@/components/OurWork/InnovationEcosystem/OngoingEvents"
 import CommonBanner from "@/components/Shared/CommonBanner"
@@ -66,6 +67,7 @@ const page = () => {
             />
 
             <OngoingEvents />
+            <AchievementCounter />
 
         </div>
     )
