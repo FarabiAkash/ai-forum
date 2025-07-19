@@ -3,9 +3,9 @@ import Link from 'next/link';
 import React from 'react'
 import { IoIosArrowForward } from "react-icons/io";
 
-const Card = ({ title, description, link, image, key , bgColor, textColor, id }) => {
+const Card = ({ title, description, image, bgColor, textColor, id }) => {
     return (
-        <div key={key} className={`text-left p-5 [&>h3]:mt-4 [&>p]:mt-4 [&>div]:mt-4 ${bgColor} ${textColor} `}>
+        <div key={id} className={`text-left p-5 [&>h3]:mt-4 [&>p]:mt-4 [&>div]:mt-4 ${bgColor} ${textColor} `}>
             <img src={image} alt={title} />
             <h3 className='font-semibold'>{title}</h3>
             <p className="opacity-60">{description}</p>

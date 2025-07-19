@@ -5,7 +5,7 @@ export const Courses = [
         id: 1,
         title: "Creative AI Tools",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        link: "/our-work/ai-academy/ai-for-healthcare-professionals",
+        
         image: "/assets/our-work/ai-academy/skills1.png",
         courseOutline: [
             {
@@ -82,7 +82,7 @@ export const Courses = [
         id: 2,
         title: "Analytical AI Tools",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        link: "/our-work/ai-academy/ai-for-business-professionals",
+        
         image: "/assets/our-work/ai-academy/skills2.png",
         courseOutline: [
             {
@@ -159,7 +159,7 @@ export const Courses = [
         id: 3,
         title: "Research On AI",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        link: "/our-work/ai-academy/ai-for-educators",
+        
         image: "/assets/our-work/ai-academy/skills3.png",
         courseOutline: [
             {
@@ -236,7 +236,7 @@ export const Courses = [
         id: 4,
         title: "Launchpad Mentorship",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        link: "/our-work/ai-academy/ai-for-healthcare-professionals",
+        
         image: "/assets/our-work/ai-academy/startup1.png",
         courseOutline: [
             {
@@ -313,7 +313,7 @@ export const Courses = [
         id: 5,
         title: "WIPO Curriculum",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        link: "/our-work/ai-academy/ai-for-business-professionals",
+        
         image: "/assets/our-work/ai-academy/startup2.png",
         courseOutline: [
             {
@@ -390,7 +390,7 @@ export const Courses = [
         id: 6,
         title: "HSIL Venture Incubation",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        link: "/our-work/ai-academy/ai-for-educators",
+        
         image: "/assets/our-work/ai-academy/startup3.png",
         courseOutline: [
             {
@@ -467,7 +467,7 @@ export const Courses = [
         id: 7,
         title: "AI For Healthcare Professionals",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        link: "/our-work/ai-academy/ai-for-healthcare-professionals",
+        
         image: "/assets/our-work/ai-academy/professional1.png",
         courseOutline: [
             {
@@ -544,7 +544,7 @@ export const Courses = [
         id: 8,
         title: "AI For Business Professionals",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        link: "/our-work/ai-academy/ai-for-business-professionals",
+        
         image: "/assets/our-work/ai-academy/professional2.png",
         courseOutline: [
             {
@@ -621,7 +621,7 @@ export const Courses = [
         id: 9,
         title: "AI For Educators",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        link: "/our-work/ai-academy/ai-for-educators",
+        
         image: "/assets/our-work/ai-academy/professional3.png",
         courseOutline: [
             {

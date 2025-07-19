@@ -13,10 +13,9 @@ const SectionBlock = ({ title, description, items, bgColor, titleColor, descColo
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                     {items.map((item, index) => (
                         <Card
-                            key={index}
+                            key={item.id}
                             title={item.title}
                             description={item.description}
-                            link={item.link}
                             image={item.image}
                             bgColor={cardBgColor}
                             textColor={cardTextColor}
