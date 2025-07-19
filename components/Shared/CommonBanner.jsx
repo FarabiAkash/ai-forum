@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { GoArrowRight } from 'react-icons/go'
 
 const CommonBanner = ({ bannerImg, title, description, logo }) => {
   return (

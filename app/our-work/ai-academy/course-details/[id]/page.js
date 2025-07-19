@@ -1,15 +1,14 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import CommonBanner from '@/components/Shared/CommonBanner';
 import CustomBreadcrumbs from '@/components/Shared/CustomBreadcrumbs';
-import bannerBg from '@/public/assets/our-work/ai-academy/banner.png'
-import bannerLogo from '@/public/assets/our-work/innovation-ecosystem/bannerLogo.svg'
+import bannerBg from '@/public/assets/our-work/ai-academy/course-details-banner.png'
 import { Courses } from '@/data/CourseData';
 import { useParams } from 'next/navigation';
 import Card from '@/components/Shared/Card';
 import { IoIosArrowForward } from 'react-icons/io';
 import Link from 'next/link';
 import CourseDetails from '@/components/AiAcademy/CourseDetails';
+import AiAcademyBanner from '@/components/AiAcademy/AiAcademyBanner';
 
 function getRandomCourses(allCourses, currentId, count = 3) {
   const others = allCourses.filter(c => c.id !== currentId);
@@ -39,12 +38,15 @@ const page = () => {
 
   return (
     <div className="bg-[#FAFAFA]">
-      <CommonBanner
-        logo={bannerLogo}
-        title={'AI Academy'}
-        description={'We shape policies and activate communities to build a stronger innovation landscape in Bangladesh through bold ideas, national benchmarks, real mentorship, and future-focused events.'}
+      <AiAcademyBanner
         bannerImg={bannerBg}
-      />
+      >
+        <div className="px-20 space-y-8">
+          <h1 className='font-bold text-[48px] leading-[64px]'>AI for Healthcare Professionals</h1>
+          <p>This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping Bangladesh’s innovation landscape to drive growth.</p>
+        </div>
+        <div></div>
+      </AiAcademyBanner>
       <CustomBreadcrumbs
         rootRoute={'Home / Our Work / Academy of AI'}
         subRoute={course.title}

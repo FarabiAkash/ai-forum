@@ -1,9 +1,10 @@
+import AiAcademyBanner from "@/components/AiAcademy/AiAcademyBanner"
 import SectionBlock from "@/components/AiAcademy/SectionBlock"
-import CommonBanner from "@/components/Shared/CommonBanner"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs"
 import { Courses } from "@/data/CourseData"
 import bannerBg from '@/public/assets/our-work/ai-academy/banner.png'
-import bannerLogo from '@/public/assets/our-work/innovation-ecosystem/bannerLogo.svg'
+import bannerLogo from '@/public/assets/our-work/ai-academy/AI_ACADEMY_LOGO.PNG'
+import Image from "next/image"
 
 const page = () => {
     const professionalIntelligenceCourses = Courses.filter(course => course.category === 'professional');
@@ -11,12 +12,16 @@ const page = () => {
     const startupIntelligenceCourses = Courses.filter(course => course.category === 'startup');
     return (
         <div className="bg-[#FAFAFA]">
-            <CommonBanner
-                logo={bannerLogo}
-                title={'AI Academy'}
-                description={'We shape policies and activate communities to build a stronger innovation landscape in Bangladesh through bold ideas, national benchmarks, real mentorship, and future-focused events.'}
+            <AiAcademyBanner
                 bannerImg={bannerBg}
-            />
+            >
+                <div className="px-20 space-y-8">
+                    <Image src={bannerLogo} width={343} height={80} alt="AI Academy Logo" />
+                    <p>This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping Bangladesh’s innovation landscape to drive growth.</p>
+                </div>
+                <div></div>
+
+            </AiAcademyBanner>
             <CustomBreadcrumbs
                 rootRoute={'Home / Our Work '}
                 subRoute={'AI Academy'}
