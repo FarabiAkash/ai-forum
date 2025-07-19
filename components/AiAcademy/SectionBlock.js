@@ -20,6 +20,7 @@ const SectionBlock = ({ title, description, items, bgColor, titleColor, descColo
                             image={item.image}
                             bgColor={cardBgColor}
                             textColor={cardTextColor}
+                            id={item.id}
                         />
                     ))}
                 </div>

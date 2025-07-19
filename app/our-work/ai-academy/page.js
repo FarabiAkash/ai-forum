@@ -1,72 +1,14 @@
 import SectionBlock from "@/components/AiAcademy/SectionBlock"
 import CommonBanner from "@/components/Shared/CommonBanner"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs"
+import { Courses } from "@/data/CourseData"
 import bannerBg from '@/public/assets/our-work/ai-academy/banner.png'
 import bannerLogo from '@/public/assets/our-work/innovation-ecosystem/bannerLogo.svg'
 
 const page = () => {
-    const professionalIntelligence = [
-        {
-            title: "AI For Healthcare Professionals",
-            description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-            link: "/our-work/ai-academy/ai-for-healthcare-professionals",
-            image: "/assets/our-work/ai-academy/professional1.png"
-        },
-        {
-            title: "AI For Business Professionals",
-            description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-            link: "/our-work/ai-academy/ai-for-business-professionals",
-            image: "/assets/our-work/ai-academy/professional2.png"
-        },
-        {
-            title: "AI For Educators",
-            description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-            link: "/our-work/ai-academy/ai-for-educators",
-            image: "/assets/our-work/ai-academy/professional3.png"
-        }
-    ]
-
-    const skillsIntelligence = [
-        {
-            title: "Creative AI Tools",
-            description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-            link: "/our-work/ai-academy/ai-for-healthcare-professionals",
-            image: "/assets/our-work/ai-academy/skills1.png"
-        },
-        {
-            title: "Analytical AI Tools",
-            description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-            link: "/our-work/ai-academy/ai-for-business-professionals",
-            image: "/assets/our-work/ai-academy/skills2.png"
-        },
-        {
-            title: "Research On AI",
-            description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-            link: "/our-work/ai-academy/ai-for-educators",
-            image: "/assets/our-work/ai-academy/skills3.png"
-        }
-    ]
-
-    const startupIntelligence = [
-        {
-            title: "Launchpad Mentorship",
-            description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-            link: "/our-work/ai-academy/ai-for-healthcare-professionals",
-            image: "/assets/our-work/ai-academy/startup1.png"
-        },
-        {
-            title: "WIPO Curriculum",
-            description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-            link: "/our-work/ai-academy/ai-for-business-professionals",
-            image: "/assets/our-work/ai-academy/startup2.png"
-        },
-        {
-            title: "HSIL Venture Incubation",
-            description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-            link: "/our-work/ai-academy/ai-for-educators",
-            image: "/assets/our-work/ai-academy/startup3.png"
-        }
-    ]
+    const professionalIntelligenceCourses = Courses.filter(course => course.category === 'professional');
+    const skillsIntelligenceCourses = Courses.filter(course => course.category === 'skills');
+    const startupIntelligenceCourses = Courses.filter(course => course.category === 'startup');
     return (
         <div className="bg-[#FAFAFA]">
             <CommonBanner
@@ -84,7 +26,7 @@ const page = () => {
             <SectionBlock
                 title="AI For Professional Intelligence"
                 description="From AI competitions to founder masterclasses and innovation audits, our diverse programs are designed to spark ideas, build skills, and launch the next generation of changemakers."
-                items={professionalIntelligence}
+                items={professionalIntelligenceCourses}
                 bgColor="bg-[#FAFAFA]"
                 titleColor="text-black"
                 descColor="text-[#717680]"
@@ -96,7 +38,7 @@ const page = () => {
             <SectionBlock
                 title="AI Intelligence & Skills"
                 description="From AI competitions to founder masterclasses and innovation audits, our diverse programs are designed to spark ideas, build skills, and launch the next generation of changemakers."
-                items={skillsIntelligence}
+                items={skillsIntelligenceCourses}
                 bgColor="bg-[#285473]"
                 titleColor="text-white"
                 descColor="text-white"
@@ -108,7 +50,7 @@ const page = () => {
             <SectionBlock
                 title="Start-up Intelligence"
                 description="From AI competitions to founder masterclasses and innovation audits, our diverse programs are designed to spark ideas, build skills, and launch the next generation of changemakers."
-                items={startupIntelligence}
+                items={startupIntelligenceCourses}
                 bgColor="bg-[#FAFAFA]"
                 titleColor="text-black"
                 descColor="text-[#717680]"
