@@ -7,6 +7,9 @@ import { ecoSystems } from '@/data/innovationEcosystems'
 import InnovationDetailsBanner from '@/components/OurWork/InnovationEcosystem/InnovationDetailsBanner'
 import CustomBreadcrumbs from '@/components/Shared/CustomBreadcrumbs'
 import ProgramsContainer from '@/components/OurWork/InnovationEcosystem/ProgramsContainer'
+import HackathonGallery from '@/components/Hackathon/HackathonGallery'
+import InnovationGallery from '@/components/OurWork/InnovationEcosystem/InnovationGallery'
+import ImpactStats from '@/components/Hackathon/ImpactStats'
 
 const Page = () => {
     const [item, setItem] = useState({});
@@ -24,13 +27,15 @@ const Page = () => {
     }, [id])
     console.log(item)
     return (
-        <div>
+        <div className='bg-[#FAFAFA]'>
             <InnovationDetailsBanner />
             <CustomBreadcrumbs
                 rootRoute={'Home / Our Work / Building Innovation Ecosystem'}
                 subRoute={item.name}
             />
             <ProgramsContainer programs={item.programs} />
+            <InnovationGallery />
+            <ImpactStats />
         </div>
     )
 }
