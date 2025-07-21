@@ -6,6 +6,7 @@ import { useParams } from 'next/navigation'
 import { ecoSystems } from '@/data/innovationEcosystems'
 import InnovationDetailsBanner from '@/components/OurWork/InnovationEcosystem/InnovationDetailsBanner'
 import CustomBreadcrumbs from '@/components/Shared/CustomBreadcrumbs'
+import ProgramsContainer from '@/components/OurWork/InnovationEcosystem/ProgramsContainer'
 
 const Page = () => {
     const [item, setItem] = useState({});
@@ -17,12 +18,11 @@ const Page = () => {
 
         if (matchedItem) {
             setItem(matchedItem)
-            console.log(matchedItem)
         } else {
             console.warn('No matching item found for id:', id)
         }
     }, [id])
-
+    console.log(item)
     return (
         <div>
             <InnovationDetailsBanner />
@@ -30,6 +30,7 @@ const Page = () => {
                 rootRoute={'Home / Our Work / Building Innovation Ecosystem'}
                 subRoute={item.name}
             />
+            <ProgramsContainer programs={item.programs} />
         </div>
     )
 }
