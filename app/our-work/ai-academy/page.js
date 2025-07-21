@@ -3,7 +3,7 @@ import SectionBlock from "@/components/AiAcademy/SectionBlock"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs"
 import { Courses } from "@/data/CourseData"
 import bannerBg from '@/public/assets/our-work/ai-academy/banner.png'
-import bannerLogo from '@/public/assets/our-work/ai-academy/AI_ACADEMY_LOGO.PNG'
+import bannerLogo from '@/public/assets/our-work/ai-academy/ai-academy-logo.png'
 import Image from "next/image"
 
 const page = () => {
