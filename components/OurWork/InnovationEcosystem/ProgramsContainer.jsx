@@ -10,7 +10,7 @@ const ProgramsContainer = ({ programs }) => {
     // Simulate fetch
     setTimeout(() => {
       setLoading(false)
-    }, 1500)
+    }, 1000)
   }, [programs])
 
   const filteredPrograms =
@@ -18,7 +18,7 @@ const ProgramsContainer = ({ programs }) => {
       ? programs
       : programs.filter(program => program.programType === filter)
 
-  const programTypes = ['All', ...new Set(programs.map(p => p.programType))]
+  const programTypes = ['All', ...new Set(programs?.map(p => p.programType))]
 
   return (
     <div className='max-w-7xl mx-auto px-5 py-6 sm:py-10 '>
@@ -44,6 +44,7 @@ const ProgramsContainer = ({ programs }) => {
         </div>
       </div>
 
+      {/* <div className='flex flex-col justify-center items-center gap-6'> */}
       <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-4'>
         {loading
           ? [...Array(9)].map((_, i) => (
@@ -69,6 +70,15 @@ const ProgramsContainer = ({ programs }) => {
               />
             ))}
       </div>
+      <div className='flex justify-center mt-6'>
+        {!loading && (
+          <button className='px-5 py-2 text-xs font-medium text-[#717680] bg-[#0000000D] transition'>
+            LOAD MORE
+          </button>
+        )}
+      </div>
+
+      {/* </div> */}
     </div>
   )
 }
