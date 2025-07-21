@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation'
 
 import { ecoSystems } from '@/data/innovationEcosystems'
 import InnovationDetailsBanner from '@/components/OurWork/InnovationEcosystem/InnovationDetailsBanner'
+import CustomBreadcrumbs from '@/components/Shared/CustomBreadcrumbs'
 
 const Page = () => {
     const [item, setItem] = useState({});
@@ -25,6 +26,10 @@ const Page = () => {
     return (
         <div>
             <InnovationDetailsBanner />
+            <CustomBreadcrumbs
+                rootRoute={'Home / Our Work / Building Innovation Ecosystem'}
+                subRoute={item.name}
+            />
         </div>
     )
 }
