@@ -13,7 +13,7 @@ const EcoCard = ({ item }) => {
         {item.desc}
       </p>
       <a
-        href='#'
+        href={`/our-work/innovation-ecosystem/${item.id}`}
         className='flex justify-center items-center gap-2 text-[#717680] text-[15px] sm:leading-[24px]'
       >
         <span className='underline'>Learn more</span>
