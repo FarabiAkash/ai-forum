@@ -1,4 +1,5 @@
 'use client'
+import LimitedSpot from "@/components/OurWork/InnovationEcosystem/LimitedSpot";
 import ProgramDescription from "@/components/OurWork/InnovationEcosystem/ProgramDescription";
 import ProgramDetailsBanner from "@/components/OurWork/InnovationEcosystem/ProgramDetailsBanner"
 import ProgramSpeakers from "@/components/OurWork/InnovationEcosystem/ProgramSpeakers";
@@ -33,6 +34,7 @@ const page = () => {
             />
             <ProgramDescription />
             <ProgramSpeakers />
+            <LimitedSpot />
         </div>
     )
 }
