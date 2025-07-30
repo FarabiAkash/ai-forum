@@ -1,5 +1,7 @@
 'use client'
+import ProgramDescription from "@/components/OurWork/InnovationEcosystem/ProgramDescription";
 import ProgramDetailsBanner from "@/components/OurWork/InnovationEcosystem/ProgramDetailsBanner"
+import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs";
 import { ecoSystems, programs } from "@/data/innovationEcosystems";
 import { useParams } from "next/navigation"
 import { useEffect, useState } from "react";
@@ -24,6 +26,11 @@ const page = () => {
             <ProgramDetailsBanner
                 item={item}
             />
+            <CustomBreadcrumbs
+                rootRoute={'Home / Our Work / Building Innovation Ecosystem'}
+                subRoute={item.programTitle}
+            />
+            <ProgramDescription />
         </div>
     )
 }
