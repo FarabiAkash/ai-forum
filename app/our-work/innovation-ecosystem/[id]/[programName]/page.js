@@ -1,6 +1,7 @@
 'use client'
 import ProgramDescription from "@/components/OurWork/InnovationEcosystem/ProgramDescription";
 import ProgramDetailsBanner from "@/components/OurWork/InnovationEcosystem/ProgramDetailsBanner"
+import ProgramSpeakers from "@/components/OurWork/InnovationEcosystem/ProgramSpeakers";
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs";
 import { ecoSystems, programs } from "@/data/innovationEcosystems";
 import { useParams } from "next/navigation"
@@ -31,6 +32,7 @@ const page = () => {
                 subRoute={item.programTitle}
             />
             <ProgramDescription />
+            <ProgramSpeakers />
         </div>
     )
 }
