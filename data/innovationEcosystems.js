@@ -10,7 +10,7 @@ import p8Img from '@/public/assets/our-work/innovation-ecosystem/programs/p8.png
 import p9Img from '@/public/assets/our-work/innovation-ecosystem/programs/p9.png'
 
 
-const programs = [
+export const programs = [
     {
         id: 1,
         programType: 'ongoing',
@@ -236,3 +236,5 @@ export const ecoSystems = [
         programs
     }
 ]
+
+

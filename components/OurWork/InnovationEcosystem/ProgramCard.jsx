@@ -62,7 +62,9 @@ const ProgramCard = ({
           className='w-full h-48 object-cover rounded-[1px] cursor-pointer'
           width={500}
           height={300}
-          //   onClick={() => router.push(`/program/${id}`)}
+          onClick={() =>
+            router.push(`/our-work/innovation-ecosystem/${id}/${programTitle}`)
+          }
         />
 
         {/* Content */}
@@ -70,7 +72,9 @@ const ProgramCard = ({
           {/* Status Badge */}
           <div
             className='mb-1  cursor-pointer'
-            // onClick={() => router.push(`/program/${id}`)}
+            // onClick={() =>
+            //   router.push(`/our-work/innovation-ecosystem/${id}/${programTitle}`)
+            // }
           >
             <span
               className={`inline-block text-xs font-medium px-2 py-1 rounded-[4px] ${
@@ -84,7 +88,11 @@ const ProgramCard = ({
           {/* Title & Description */}
           <h3
             className='text-[18px] font-bold text-[#040940] leading-[24px] mb-1  cursor-pointer'
-            // onClick={() => router.push(`/program/${id}`)}
+            onClick={() =>
+              router.push(
+                `/our-work/innovation-ecosystem/${id}/${programTitle}`
+              )
+            }
           >
             {programTitle}
           </h3>
