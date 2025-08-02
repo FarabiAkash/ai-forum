@@ -34,7 +34,7 @@ const Navbar = () => {
   const navItemClass = href =>
     `relative pb-1 ${
       pathname === href
-        ? 'after:absolute after:bottom-[-25px] after:-left-0 after:h-[2px] after:w-full after:bg-[#3039E5] after:content-[""] after:rounded-full'
+        ? 'after:absolute after:bottom-[-28px] after:-left-0 after:h-[2px] after:w-full after:bg-[#3039E5] after:content-[""] after:rounded-full'
         : ''
     } hover:text-${showSolidNav ? 'gray-700' : 'gray-300'} transition-all`
 
@@ -46,10 +46,10 @@ const Navbar = () => {
           : 'bg-[#0000001A] text-white border-b border-[#FFFFFF40]'
       }`}
     >
-      <div className='max-w-7xl mx-auto px-4 py-4 flex justify-between items-center'>
+      <div className='max-w-7xl mx-auto py-4 flex justify-between items-center'>
         {/* Logo */}
         <div
-          className='w-[150px] h-[40px] cursor-pointer'
+          className='w-[150px] cursor-pointer'
           onClick={() => router.push('/')}
         >
           <Image
@@ -60,7 +60,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <nav className='hidden md:flex gap-8 font-medium uppercase text-sm relative'>
+        <nav className='hidden md:flex gap-8 font-medium uppercase text-sm relative mt-[10px]'>
           <a href='/' className={navItemClass('/')}>
             Home
           </a>
