@@ -46,7 +46,7 @@ const Navbar = () => {
           : 'bg-[#0000001A] text-white border-b border-[#FFFFFF40]'
       }`}
     >
-      <div className='max-w-7xl mx-auto py-4 flex justify-between items-center'>
+      <div className='max-w-7xl mx-auto py-4 px-4 2xl:px-0 flex justify-between items-center'>
         {/* Logo */}
         <div
           className='w-[150px] cursor-pointer'
