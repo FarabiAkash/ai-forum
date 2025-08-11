@@ -3,6 +3,7 @@ import CommonBanner from "@/components/Shared/CommonBanner";
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs";
 import { useParams } from "next/navigation"
 import mentorsBannerBg from '@/public/assets/our-work/career-care/mentorBg.png'
+import CareerMentors from "@/components/OurWork/CareerCare/CareerMentors";
 
 const courses = [
     {
@@ -244,9 +245,9 @@ const courses = [
 const page = () => {
     const { mentorId } = useParams();
     const matchedItem = courses.find(item => item.id === Number(mentorId))
-    const { title, image } = matchedItem
+    const { title } = matchedItem
     return (
-        <div>
+        <div className="bg-[#FAFAFA]">
             <CommonBanner
                 title={title + ' Mentors'}
                 description={'We shape policies and activate communities to build a stronger innovation landscape in Bangladesh through bold ideas, national benchmarks, real mentorship, and future-focused events.'}
@@ -256,6 +257,7 @@ const page = () => {
                 rootRoute={'Home / Our Work / Career Care'}
                 subRoute={title + ' Mentors'}
             />
+            <CareerMentors item={matchedItem} />
         </div>
     )
 }
