@@ -259,7 +259,7 @@ const AICourses = () => {
     setShuffled(shuffledList)
   }, [])
   return (
-    <div className='bg-[#FAFAFA] py-10'>
+    <div className='bg-[#FAFAFA] pb-10'>
       <div className='p-5 max-w-7xl mx-auto text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8'>
         {shuffled?.map(item => (
           <div
