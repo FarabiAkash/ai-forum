@@ -1,3 +1,4 @@
+import AICourses from "@/components/OurWork/CareerCare/AICourses"
 import CommonBanner from "@/components/Shared/CommonBanner"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs"
 
@@ -18,7 +19,7 @@ const page = () => {
                 rootRoute={'Home / Our Work '}
                 subRoute={'Career Care'}
             />
-
+            <AICourses />
         </div>
     )
 }
