@@ -278,7 +278,7 @@ const AICourses = () => {
             <p className='opacity-60'>{item.description}</p>
             <div className='opacity-60'>
               <Link
-                href={`/our-work/ai-academy/course-details/${item.id}`}
+                href={`/our-work/career-care/${item.id}`}
                 className={`flex items-center gap-2 transition-all`}
               >
                 Learn More <IoIosArrowForward />
