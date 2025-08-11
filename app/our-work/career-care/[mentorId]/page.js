@@ -4,6 +4,7 @@ import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs";
 import { useParams } from "next/navigation"
 import mentorsBannerBg from '@/public/assets/our-work/career-care/mentorBg.png'
 import CareerMentors from "@/components/OurWork/CareerCare/CareerMentors";
+import PopularPrograms from "@/components/OurWork/CareerCare/PopularPrograms";
 
 const courses = [
     {
@@ -258,6 +259,7 @@ const page = () => {
                 subRoute={title + ' Mentors'}
             />
             <CareerMentors item={matchedItem} />
+            <PopularPrograms />
         </div>
     )
 }
