@@ -1,7 +1,7 @@
 const CareerLargeCard = ({ image, title, description, dark }) => {
   return (
     <div
-      className='relative shadow overflow-hidden h-[400px] flex items-end col-span-2'
+      className='relative shadow overflow-hidden h-[400px] flex items-end xl:col-span-2'
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
