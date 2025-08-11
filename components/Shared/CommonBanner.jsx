@@ -18,7 +18,7 @@ const CommonBanner = ({ bannerImg, title, description, logo }) => {
             <Image
               src={logo}
               alt={description}
-              className='w-full h-full object-cover'
+              className='w-full h-full object-contain'
             />
           </div>
         ) : (
