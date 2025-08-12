@@ -67,7 +67,7 @@ Bangabandhu Sheikh Mujib Medical University (BSMMU)`,
           {/* Apply Button */}
           <button
             onClick={() => setIsModalOpen(true)}
-            className='w-full bg-[#3039E5] hover:bg-[#2d3eb8] text-white py-3 rounded-sm text-sm font-semibold'
+            className='w-full bg-[#3039E5] hover:bg-[#2d3eb8] text-white py-3 rounded-sm text-sm font-semibold cursor-pointer'
           >
             APPLY
           </button>
