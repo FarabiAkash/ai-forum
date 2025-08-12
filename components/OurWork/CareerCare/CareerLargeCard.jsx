@@ -1,12 +1,17 @@
-const CareerLargeCard = ({ image, title, description, dark }) => {
+'use client'
+import { useRouter } from 'next/navigation'
+
+const CareerLargeCard = ({ id, image, title, description, dark }) => {
+  const router = useRouter()
   return (
     <div
-      className='relative shadow overflow-hidden h-[400px] flex items-end xl:col-span-2'
+      className='relative shadow overflow-hidden h-[400px] flex items-end xl:col-span-2 cursor-pointer'
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
+      onClick={() => router.push(`/our-work/career-care/details/${id}`)}
     >
       {/* Overlay */}
       <div

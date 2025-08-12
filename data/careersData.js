@@ -1,6 +1,7 @@
 export const careersData = {
     section1: [
         {
+            id: 1,
             type: "large",
             image: "/assets/our-work/career-care/car1.png",
             title: "Launch Your Global Career!",
@@ -9,6 +10,7 @@ export const careersData = {
             dark: false,
         },
         {
+            id: 2,
             type: "small",
             image: "/assets/our-work/career-care/car2.png",
             title: "Global Research Placement",
@@ -17,6 +19,7 @@ export const careersData = {
             dark: false,
         },
         {
+            id: 3,
             type: "small",
             image: "/assets/our-work/career-care/car3.png",
             title: "Global Relocation Services",
@@ -27,6 +30,7 @@ export const careersData = {
     ],
     section2: [
         {
+            id: 4,
             type: "small",
             image: "/assets/our-work/career-care/car4.png",
             title: "Standard Package: Candidate Perfection",
@@ -35,6 +39,7 @@ export const careersData = {
             dark: true,
         },
         {
+            id: 5,
             type: "small",
             image: "/assets/our-work/career-care/car5.png",
             title: "Gold Package: Career Consultation",
@@ -43,6 +48,7 @@ export const careersData = {
             dark: true,
         },
         {
+            id: 6,
             type: "large",
             image: "/assets/our-work/career-care/car6.png",
             title: "Excel your Career at Bangladesh!",

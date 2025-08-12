@@ -246,12 +246,13 @@ const courses = [
 const page = () => {
     const { mentorId } = useParams();
     const matchedItem = courses.find(item => item.id === Number(mentorId))
-    const { title } = matchedItem
+    const { title, description } = matchedItem
+    console.log(matchedItem)
     return (
         <div className="bg-[#FAFAFA]">
             <CommonBanner
                 title={title + ' Mentors'}
-                description={'We shape policies and activate communities to build a stronger innovation landscape in Bangladesh through bold ideas, national benchmarks, real mentorship, and future-focused events.'}
+                description={description}
                 bannerImg={mentorsBannerBg}
             />
             <CustomBreadcrumbs
