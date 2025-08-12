@@ -2,6 +2,7 @@
 
 import CareerDetails from "@/components/OurWork/CareerCare/CareerDetails";
 import PlacementSupervisor from "@/components/OurWork/CareerCare/PlacementSupervisor";
+import Testimonials from "@/components/OurWork/CareerCare/Testimonials";
 import CommonBanner from "@/components/Shared/CommonBanner"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs";
 import { careersData } from "@/data/careersData";
@@ -36,6 +37,8 @@ const page = () => {
                 <CareerDetails />
                 <PlacementSupervisor />
             </div>
+
+            <Testimonials />
         </div>
     )
 }
