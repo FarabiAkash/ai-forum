@@ -1,5 +1,7 @@
 'use client'
 
+import CareerDetails from "@/components/OurWork/CareerCare/CareerDetails";
+import PlacementSupervisor from "@/components/OurWork/CareerCare/PlacementSupervisor";
 import CommonBanner from "@/components/Shared/CommonBanner"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs";
 import { careersData } from "@/data/careersData";
@@ -28,6 +30,12 @@ const page = () => {
                 rootRoute={'Home / Our Work / Career Care'}
                 subRoute={title}
             />
+
+            {/* career details */}
+            <div className="max-w-7xl mx-auto p-5 flex flex-col md:flex-row gap-8 justify-between items-start">
+                <CareerDetails />
+                <PlacementSupervisor />
+            </div>
         </div>
     )
 }
