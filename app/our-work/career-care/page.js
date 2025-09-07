@@ -3,7 +3,7 @@ import Careers from "@/components/OurWork/CareerCare/Careers"
 import CommonBanner from "@/components/Shared/CommonBanner"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs"
 
-import bannerBg from '@/public/assets/our-work/career-care/banner.png'
+import bannerBg from '@/public/assets/our-work/career-care/banner.jpg'
 import bannerLogo from '@/public/assets/our-work/career-care/bannerLogo.png'
 
 

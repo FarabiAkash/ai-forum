@@ -76,18 +76,26 @@ const Footer = () => {
               Social
             </h4>
             <ul className='space-y-2 font-semibold text-[#535862] mb-2 leading-[20px]'>
-              <li>
+              {/* <li>
                 <a href='#' className='hover:text-black'>
                   Twitter
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a href='#' className='hover:text-black'>
+                <a
+                  href='https://www.linkedin.com/company/aiforumbd/'
+                  target='_blank'
+                  className='hover:text-black'
+                >
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href='#' className='hover:text-black'>
+                <a
+                  href='https://www.facebook.com/aiforumbd.official'
+                  target='_blank'
+                  className='hover:text-black'
+                >
                   Facebook
                 </a>
               </li>
@@ -130,10 +138,18 @@ const Footer = () => {
             <a href='#' className='hover:text-black'>
               <FaXTwitter size={22} />
             </a>
-            <a href='#' className='hover:text-black'>
+            <a
+              href='https://www.linkedin.com/company/aiforumbd/'
+              target='_blank'
+              className='hover:text-black'
+            >
               <FaLinkedinIn size={22} />
             </a>
-            <a href='#' className='hover:text-black'>
+            <a
+              href='https://www.facebook.com/aiforumbd.official'
+              target='_blank'
+              className='hover:text-black'
+            >
               <FaFacebookF size={22} />
             </a>
           </div>

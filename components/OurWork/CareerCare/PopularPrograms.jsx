@@ -12,7 +12,7 @@ const courses = [
     description:
       'This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.',
 
-    image: '/assets/our-work/career-care/c1.png',
+    image: '/assets/our-work/career-care/c1.jpg',
     courseOutline: [
       {
         module: 'Module 1',
@@ -90,7 +90,7 @@ const courses = [
     description:
       'This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.',
 
-    image: '/assets/our-work/career-care/c2.png',
+    image: '/assets/our-work/career-care/c2.jpg',
     courseOutline: [
       {
         module: 'Module 1',
@@ -168,7 +168,7 @@ const courses = [
     description:
       'This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.',
 
-    image: '/assets/our-work/career-care/c3.png',
+    image: '/assets/our-work/career-care/c3.jpg',
     courseOutline: [
       {
         module: 'Module 1',

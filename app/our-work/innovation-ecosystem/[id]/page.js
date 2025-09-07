@@ -25,7 +25,6 @@ const Page = () => {
             console.warn('No matching item found for id:', id)
         }
     }, [id])
-    console.log(item)
     return (
         <div className='bg-[#FAFAFA]'>
             <InnovationDetailsBanner />

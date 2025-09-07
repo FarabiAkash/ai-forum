@@ -1,4 +1,5 @@
 import bgBanner from '@/public/assets/home/HomeBanner.jpg'
+import Link from 'next/link'
 import { GoArrowRight } from 'react-icons/go'
 
 const Banner = () => {
@@ -22,12 +23,12 @@ const Banner = () => {
           purpose to thrive in an AI-driven world. From business to medicine to
           tech we’ll help you find your path and lead it.
         </p>
-        <a
-          href='#team'
+        <Link
+          href='/about-us'
           className='inline-flex items-center gap-2 px-6 py-[12px] border border-white text-white hover:bg-white hover:text-black transition text-sm font-semibold tracking-wide uppercase'
         >
           Explore Our Team <GoArrowRight size={22} />
-        </a>
+        </Link>
       </div>
     </section>
   )

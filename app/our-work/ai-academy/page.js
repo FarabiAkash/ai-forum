@@ -2,7 +2,7 @@ import AiAcademyBanner from "@/components/AiAcademy/AiAcademyBanner"
 import SectionBlock from "@/components/AiAcademy/SectionBlock"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs"
 import { Courses } from "@/data/CourseData"
-import bannerBg from '@/public/assets/our-work/ai-academy/banner.png'
+import bannerBg from '@/public/assets/our-work/ai-academy/banner.jpg'
 import bannerLogo from '@/public/assets/our-work/ai-academy/ai-academy-logo.png'
 import Image from "next/image"
 

@@ -2,7 +2,7 @@
 import CommonBanner from "@/components/Shared/CommonBanner";
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs";
 import { useParams } from "next/navigation"
-import mentorsBannerBg from '@/public/assets/our-work/career-care/mentorBg.png'
+import mentorsBannerBg from '@/public/assets/our-work/career-care/mentorBg.jpg'
 import CareerMentors from "@/components/OurWork/CareerCare/CareerMentors";
 import PopularPrograms from "@/components/OurWork/CareerCare/PopularPrograms";
 

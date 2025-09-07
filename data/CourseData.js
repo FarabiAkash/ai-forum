@@ -5,8 +5,8 @@ export const Courses = [
         id: 1,
         title: "Creative AI Tools",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        
-        image: "/assets/our-work/ai-academy/skills1.png",
+
+        image: "/assets/our-work/ai-academy/skills1.jpg",
         courseOutline: [
             {
                 module: "Module 1",
@@ -74,7 +74,7 @@ export const Courses = [
                 "Health data ethics and governance"
             ],
             title: "Course Mentor",
-            image: "/assets/our-work/ai-academy/mentor.png" // Replace this with actual image path or URL
+            image: "/assets/our-work/ai-academy/mentor.png"
         },
         category: "skills"
     },
@@ -82,8 +82,8 @@ export const Courses = [
         id: 2,
         title: "Analytical AI Tools",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        
-        image: "/assets/our-work/ai-academy/skills2.png",
+
+        image: "/assets/our-work/ai-academy/skills2.jpg",
         courseOutline: [
             {
                 module: "Module 1",
@@ -159,8 +159,8 @@ export const Courses = [
         id: 3,
         title: "Research On AI",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        
-        image: "/assets/our-work/ai-academy/skills3.png",
+
+        image: "/assets/our-work/ai-academy/skills3.jpg",
         courseOutline: [
             {
                 module: "Module 1",
@@ -236,8 +236,8 @@ export const Courses = [
         id: 4,
         title: "Launchpad Mentorship",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        
-        image: "/assets/our-work/ai-academy/startup1.png",
+
+        image: "/assets/our-work/ai-academy/startup1.jpg",
         courseOutline: [
             {
                 module: "Module 1",
@@ -313,8 +313,8 @@ export const Courses = [
         id: 5,
         title: "WIPO Curriculum",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        
-        image: "/assets/our-work/ai-academy/startup2.png",
+
+        image: "/assets/our-work/ai-academy/startup2.jpg",
         courseOutline: [
             {
                 module: "Module 1",
@@ -390,8 +390,8 @@ export const Courses = [
         id: 6,
         title: "HSIL Venture Incubation",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        
-        image: "/assets/our-work/ai-academy/startup3.png",
+
+        image: "/assets/our-work/ai-academy/startup3.jpg",
         courseOutline: [
             {
                 module: "Module 1",
@@ -467,8 +467,8 @@ export const Courses = [
         id: 7,
         title: "AI For Healthcare Professionals",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        
-        image: "/assets/our-work/ai-academy/professional1.png",
+
+        image: "/assets/our-work/ai-academy/professional1.jpg",
         courseOutline: [
             {
                 module: "Module 1",
@@ -544,8 +544,8 @@ export const Courses = [
         id: 8,
         title: "AI For Business Professionals",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        
-        image: "/assets/our-work/ai-academy/professional2.png",
+
+        image: "/assets/our-work/ai-academy/professional2.jpg",
         courseOutline: [
             {
                 module: "Module 1",
@@ -621,8 +621,8 @@ export const Courses = [
         id: 9,
         title: "AI For Educators",
         description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
-        
-        image: "/assets/our-work/ai-academy/professional3.png",
+
+        image: "/assets/our-work/ai-academy/professional3.jpg",
         courseOutline: [
             {
                 module: "Module 1",

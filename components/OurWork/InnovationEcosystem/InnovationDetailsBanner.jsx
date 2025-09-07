@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import eventsImg1 from '@/public/assets/our-work/innovation-ecosystem/banner.jpg'
+import eventsImg1 from '@/public/assets/our-work/innovation-ecosystem/banner3.jpg'
 
 const ongoingEvent = {
   id: 1,

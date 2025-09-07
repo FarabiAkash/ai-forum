@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import leftImg from '@/public/assets/our-work/innovation-ecosystem/leftImg.png'
-import rightImg from '@/public/assets/our-work/innovation-ecosystem/rightImg.png'
+import leftImg from '@/public/assets/our-work/innovation-ecosystem/leftImg.jpg'
+import rightImg from '@/public/assets/our-work/innovation-ecosystem/rightImg.jpg'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 
 const EcoCard = ({ item }) => {
@@ -13,10 +13,25 @@ const EcoCard = ({ item }) => {
         {item.desc}
       </p>
       <a
-        href={`/our-work/innovation-ecosystem/${item.id}`}
-        className='flex justify-center items-center gap-2 text-[#717680] text-[15px] sm:leading-[24px]'
+        href={
+          item.id === 1 || item.id === 5
+            ? `/our-work/innovation-ecosystem/${item.id}`
+            : undefined
+        }
+        className={`flex justify-center items-center gap-2 text-[15px] sm:leading-[24px] 
+    ${
+      item.id !== 1 && item.id !== 5
+        ? 'pointer-events-none text-gray-400'
+        : 'text-[#717680]'
+    }`}
       >
-        <span className='underline'>Learn more</span>
+        <span
+          className={`${
+            item.id !== 1 && item.id !== 5 ? 'no-underline' : 'underline'
+          }`}
+        >
+          Learn more
+        </span>
         <MdKeyboardArrowRight size={20} className='mt-1' />
       </a>
     </div>

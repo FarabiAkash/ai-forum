@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react'
 import CustomBreadcrumbs from '@/components/Shared/CustomBreadcrumbs';
-import bannerBg from '@/public/assets/our-work/ai-academy/course-details-banner.png'
+import bannerBg from '@/public/assets/our-work/ai-academy/course-details-banner.jpg'
 import { Courses } from '@/data/CourseData';
 import { useParams } from 'next/navigation';
 import Card from '@/components/Shared/Card';
