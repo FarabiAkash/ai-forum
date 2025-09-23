@@ -29,17 +29,17 @@ const Footer = () => {
             </h4>
             <ul className='space-y-2 font-semibold text-[#535862] mb-2 leading-[20px]'>
               <li>
-                <a href='#' className='hover:text-black'>
+                <a href='/about-us' className='hover:text-black'>
                   About us
                 </a>
               </li>
               <li>
-                <a href='#' className='hover:text-black'>
+                <a href='/our-work/career-care' className='hover:text-black'>
                   Careers
                 </a>
               </li>
               <li>
-                <a href='#' className='hover:text-black'>
+                <a href='/contact-us' className='hover:text-black'>
                   Contact us
                 </a>
               </li>
@@ -53,17 +53,20 @@ const Footer = () => {
             </h4>
             <ul className='space-y-2 font-semibold text-[#535862] mb-2 leading-[20px]'>
               <li>
-                <a href='#' className='hover:text-black'>
+                <a
+                  href='/our-work/innovation-ecosystem'
+                  className='hover:text-black'
+                >
                   Building Innovation Ecosystem
                 </a>
               </li>
               <li>
-                <a href='#' className='hover:text-black'>
+                <a href='/our-work/career-care' className='hover:text-black'>
                   Career Care
                 </a>
               </li>
               <li>
-                <a href='#' className='hover:text-black'>
+                <a href='/our-work/ai-academy' className='hover:text-black'>
                   Academy of Intelligences
                 </a>
               </li>
@@ -76,11 +79,6 @@ const Footer = () => {
               Social
             </h4>
             <ul className='space-y-2 font-semibold text-[#535862] mb-2 leading-[20px]'>
-              {/* <li>
-                <a href='#' className='hover:text-black'>
-                  Twitter
-                </a>
-              </li> */}
               <li>
                 <a
                   href='https://www.linkedin.com/company/aiforumbd/'
