@@ -32,7 +32,7 @@ const InnovationSection = () => {
               action.
             </p>
             <a
-              href='#team'
+              href='/our-work/innovation-ecosystem'
               className='inline-flex items-center gap-2 px-6 py-[12px] bg-[#FFFFFF26] text-white hover:bg-white hover:text-black transition text-sm font-semibold tracking-[2px] uppercase'
             >
               LEARN MORE <GoArrowRight size={22} />

@@ -15,7 +15,7 @@ const AiAcademy = () => {
             to shape tomorrow’s tech, business, and innovation spaces.
           </p>
           <a
-            href='#'
+            href='/our-work/ai-academy'
             className='inline-flex items-center gap-2 bg-[#FFFFFF26] text-white px-6 py-[12px]  text-sm font-semibold'
           >
             Learn More <GoArrowRight size={22} />
@@ -35,16 +35,6 @@ const AiAcademy = () => {
             </div>
           </div>
         </div>
-        {/* <div className='lg:relative h-full w-full'>
-          <div className='lg:absolute w-full h-full right-0 '>
-            <Image
-              src={AiAcademyImg}
-              alt='AI Academy Illustration'
-              className='w-full h-auto object-cover'
-              priority
-            />
-          </div>
-        </div> */}
       </div>
     </section>
   )

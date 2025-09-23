@@ -20,7 +20,7 @@ const CareerCareSection = () => {
 
         {/* Button */}
         <a
-          href='#'
+          href='/our-work/career-care'
           className='inline-flex items-center gap-2 bg-[#0000000D] text-[#181D27] px-6 py-[12px] hover:bg-black hover:text-white transition text-sm font-semibold'
         >
           Learn More <GoArrowRight size={22} />
