@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md'
 import eventsImg1 from '@/public/assets/our-work/innovation-ecosystem/banner.jpg'
 import eventsImg2 from '@/public/assets/our-work/innovation-ecosystem/banner2.png'
+import Link from 'next/link'
 
 const dummyEvents = [
   {
@@ -139,9 +140,12 @@ const OngoingEvents = () => {
             <div className='flex flex-wrap justify-between gap-4 items-center'>
               <Countdown targetDate={dummyEvents[currentIndex].date} />
 
-              <button className='bg-[#3039E5] text-white px-6 py-4 text-sm font-semibold rounded-[1px] transition'>
+              <Link
+                href={'/our-work/innovation-ecosystem/1'}
+                className='bg-[#3039E5] text-white px-6 py-4 text-sm font-semibold rounded-[1px] transition'
+              >
                 REGISTER
-              </button>
+              </Link>
             </div>
           </div>
 

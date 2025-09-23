@@ -34,7 +34,7 @@ const Page = () => {
             />
             <ProgramsContainer programs={item.programs} />
             <InnovationGallery />
-            <ImpactStats />
+            {/* <ImpactStats /> */}
         </div>
     )
 }
