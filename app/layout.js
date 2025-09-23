@@ -4,7 +4,6 @@ import Footer from "@/components/Shared/Footer";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
-// 1. Load Inter font with CSS variable
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
