@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import emailjs from 'emailjs-com'
 import { useState } from 'react'
 import getInTouchImg from '@/public/assets/contact-us/getInTouch.png'
 import toast from 'react-hot-toast'
@@ -23,39 +24,53 @@ const GetInTouch = () => {
     }))
   }
 
-  const handleSubmit = async e => {
-    e.preventDefault()
+const handleSubmit = async e => {
+  e.preventDefault()
 
-    if (!formData.agree) {
-      toast.error('You must agree to the privacy policy.', {
-        position: 'top-center'
-      })
-      return
-    }
-
-    const apiPromise = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve('done') // or reject('error')
-      }, 2000)
+  if (!formData.agree) {
+    toast.error('You must agree to the privacy policy.', {
+      position: 'top-center'
     })
+    return
+  }
 
-    toast.promise(
-      apiPromise,
+  toast.loading('Sending message...', { position: 'top-center' })
+
+  try {
+    const result = await emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,   // Your Service ID
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,  // Your Template ID
       {
-        loading: 'Please wait!',
-        success: 'Submitted successfully!',
-        error: 'Failed to submit!'
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: formData.email,
+        phone: formData.phone,
+        message: formData.message
       },
-      {
-        position: 'top-center',
-        duration: 3000,
-        reverseOrder: false
-      }
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY    // Your Public Key
     )
 
-    const result = await apiPromise
-    console.log('Result:', result)
+    toast.dismiss()
+    toast.success('Message sent successfully!', { position: 'top-center' })
+
+    // Reset form
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      message: '',
+      agree: false
+    })
+
+    console.log('SUCCESS!', result.text)
+  } catch (error) {
+    toast.dismiss()
+    toast.error('Failed to send message. Please try again.', {
+      position: 'top-center'
+    })
+    console.error('FAILED...', error)
   }
+}
 
   return (
     <section className='bg-white sm:py-16 px-5'>
