@@ -6,7 +6,7 @@ export const careersData = {
             image: "/assets/our-work/career-care/car1.jpg",
             title: "Launch Your Global Career!",
             description:
-                "From AI competitions to founder masterclasses and innovation audits, our diverse programs are designed to spark ideas, build skills, and launch the next generation of changemakers.",
+                "If you dream of studying or researching abroad, we’re here to make it possible—with personalized support every step of the way.",
             dark: false,
         },
         {
@@ -15,7 +15,7 @@ export const careersData = {
             image: "/assets/our-work/career-care/car2.jpg",
             title: "Global Research Placement",
             description:
-                "This initiative helps researchers commercialize ideas by assessing institutional readiness.",
+                "For graduates and professionals ready to pursue international research degrees—with the right guidance, strategy, and global network.",
             dark: false,
         },
         {
@@ -24,7 +24,7 @@ export const careersData = {
             image: "/assets/our-work/career-care/car3.jpg",
             title: "Global Relocation Services",
             description:
-                "This initiative helps researchers commercialize ideas by assessing institutional readiness.",
+                "We help you manage the move—from visas to accommodation—so you can focus on what matters: your academic journey.",
             dark: false,
         },
     ],
@@ -35,7 +35,7 @@ export const careersData = {
             image: "/assets/our-work/career-care/car4.jpg",
             title: "Standard Package: Candidate Perfection",
             description:
-                "This initiative helps researchers commercialize ideas by assessing institutional readiness.",
+                "For professionals seeking full career profiling, real-world simulation, and access to top-tier workshops.",
             dark: true,
         },
         {
@@ -44,7 +44,7 @@ export const careersData = {
             image: "/assets/our-work/career-care/car5.jpg",
             title: "Gold Package: Career Consultation",
             description:
-                "This initiative helps researchers commercialize ideas by assessing institutional readiness.",
+                "For job-ready graduates who want a polished CV, better interview prep, and sharper career direction.",
             dark: true,
         },
         {
@@ -53,7 +53,7 @@ export const careersData = {
             image: "/assets/our-work/career-care/car6.jpg",
             title: "Excel your Career at Bangladesh!",
             description:
-                "From AI competitions to founder masterclasses and innovation audits, our diverse programs are designed to spark ideas, build skills, and launch the next generation of changemakers.",
+                "We help you launch or restart your career through mentoring, skills, and smart job market navigation.",
             dark: true,
         },
     ],

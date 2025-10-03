@@ -4,7 +4,7 @@ import OngoingEvents from "@/components/OurWork/InnovationEcosystem/OngoingEvent
 import CommonBanner from "@/components/Shared/CommonBanner"
 import CustomBreadcrumbs from "@/components/Shared/CustomBreadcrumbs"
 import { ecoSystems } from "@/data/innovationEcosystems"
-import bannerBg from '@/public/assets/our-work/innovation-ecosystem/banner.jpg'
+import bannerBg from '@/public/assets/our-work/innovation-ecosystem/banner1.jpg'
 import bannerLogo from '@/public/assets/our-work/innovation-ecosystem/bannerLogo.svg'
 
 

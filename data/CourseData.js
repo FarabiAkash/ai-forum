@@ -4,7 +4,7 @@ export const Courses = [
     {
         id: 1,
         title: "Creative AI Tools",
-        description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
+        description: "For UI/UX designers, product developers, startup founders, and content creators who want to prototype, visualize, and pitch ideas using AI...",
 
         image: "/assets/our-work/ai-academy/skills1.jpg",
         courseOutline: [
@@ -81,7 +81,7 @@ export const Courses = [
     {
         id: 2,
         title: "Analytical AI Tools",
-        description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
+        description: "Master data-driven AI applications such as machine learning, automation, and decision-support systems to strengthen strategic and operational insights.",
 
         image: "/assets/our-work/ai-academy/skills2.jpg",
         courseOutline: [
@@ -158,7 +158,7 @@ export const Courses = [
     {
         id: 3,
         title: "Research On AI",
-        description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
+        description: "For academic researchers, policy analysts, think tank contributors, and postgraduate students working on AI, strategy, and future foresight...",
 
         image: "/assets/our-work/ai-academy/skills3.jpg",
         courseOutline: [
@@ -235,7 +235,7 @@ export const Courses = [
     {
         id: 4,
         title: "Launchpad Mentorship",
-        description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
+        description: "For university innovators, early-stage founders, and problem-solving teams ready to turn bold ideas into real ventures—with global startup tools and mentorship...",
 
         image: "/assets/our-work/ai-academy/startup1.jpg",
         courseOutline: [
@@ -312,7 +312,7 @@ export const Courses = [
     {
         id: 5,
         title: "WIPO Curriculum",
-        description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
+        description: "For med-tech and health-tech teams aiming to build scalable solutions with strong IP protection, global standards, and commercialization readiness...",
 
         image: "/assets/our-work/ai-academy/startup2.jpg",
         courseOutline: [
@@ -389,7 +389,7 @@ export const Courses = [
     {
         id: 6,
         title: "HSIL Venture Incubation",
-        description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
+        description: "For health system innovators, social impact founders, and AI solution designers working to reimagine healthcare through responsible, people-centered technology...",
 
         image: "/assets/our-work/ai-academy/startup3.jpg",
         courseOutline: [
@@ -466,7 +466,7 @@ export const Courses = [
     {
         id: 7,
         title: "AI For Healthcare Professionals",
-        description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
+        description: "For doctors, medical researchers, public health strategists, pharmacists, and hospital managers ready to lead in digital health, AI-driven diagnostics, and smart healthcare systems.",
 
         image: "/assets/our-work/ai-academy/professional1.jpg",
         courseOutline: [
@@ -543,7 +543,7 @@ export const Courses = [
     {
         id: 8,
         title: "AI For Business Professionals",
-        description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
+        description: "Built for C-suite leaders, innovation managers, operations heads, marketing directors, and tech-driven entrepreneurs ready to lead smarter, AI-powered organizations.",
 
         image: "/assets/our-work/ai-academy/professional2.jpg",
         courseOutline: [
@@ -620,7 +620,7 @@ export const Courses = [
     {
         id: 9,
         title: "AI For Educators",
-        description: "This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.",
+        description: "Tailored for general teachers, academic coordinators, curriculum designers, university faculty, and school leaders looking to bring AI into classrooms and education systems.",
 
         image: "/assets/our-work/ai-academy/professional3.jpg",
         courseOutline: [

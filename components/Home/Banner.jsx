@@ -19,9 +19,8 @@ const Banner = () => {
           Responsible AI for All
         </h1>
         <p className='text-md md:text-lg mb-4 md:mb-6 md:leading-[24px]  font-sans text-center  max-w-[790px]'>
-          AI Forum Bangladesh empowers youth with the skills, mindset, and
-          purpose to thrive in an AI-driven world. From business to medicine to
-          tech we’ll help you find your path and lead it.
+          AI Forum Bangladesh is an independent Organisation that promotes
+          responsible AI for everyone.
         </p>
         <Link
           href='/about-us'

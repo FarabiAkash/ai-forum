@@ -190,49 +190,49 @@ export const ecoSystems = [
     {
         id: 1,
         name: 'Lab 2 Market',
-        desc: 'Helping startups turn smart ideas into real businesses with expert-led, market-ready commercialization support.',
+        desc: 'Supporting with lab-driven solutions for innovation, transformation, and growth.',
         programs
     },
     {
         id: 2,
-        name: 'AI & Innovation Awards',
-        desc: 'Celebrating bold innovators and connecting them with investors, recognition, and real opportunity.',
+        name: 'Innovation Direct',
+        desc: 'Delivering tailored solutions, innovation audits, and policy support for sector-specific challenges.',
         programs
     },
     {
         id: 3,
-        name: 'Innovation Direct',
-        desc: 'We assess how future-ready your organization is and help you get there, step by step.',
+        name: 'Innovation Index',
+        desc: 'Benchmarking innovation performance through structured surveys, sectoral insights, and public reporting.',
         programs
     },
     {
         id: 4,
-        name: 'AI & Innovation Awards',
-        desc: 'We’re mapping how Bangladesh is innovating sector by sector to guide smarter policy, funding, and growth.',
+        name: 'Innovation Awards',
+        desc: 'Celebrating impactful innovators and connecting them with forward-thinking investors',
         programs
     },
     {
         id: 5,
-        name: 'Innovation Roadshow',
-        desc: 'We bring AI to classrooms making it fun, hands-on, and meaningful for students and teachers across Bangladesh.',
+        name: 'Innovation & AI Roadshow',
+        desc: 'Taking AI awareness to schools and colleges through divisional workshops across Bangladesh.',
         programs
     },
     {
         id: 6,
-        name: 'Innovation Direct',
+        name: 'Innovation Challenge',
         desc: 'Step into AI festivals where your ideas can solve real problems and shape an innovative Bangladesh.',
         programs
     },
     {
         id: 7,
         name: 'Future of AI Summit',
-        desc: 'Join the conversation that brings students, experts, and policymakers together to plan the future of AI in our country.',
+        desc: 'Uniting leaders, academia, and policymakers to shape the national AI dialogue.',
         programs
     },
     {
         id: 8,
         name: 'START',
-        desc: 'Flip through the stories, wins, and bold ideas that are driving Bangladesh’s AI movement.',
+        desc: 'Flip through the stories, wins, and bold ideas that are driving Bangladesh’s AI movement',
         programs
     }
 ]

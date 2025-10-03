@@ -27,9 +27,10 @@ const InnovationSection = () => {
               Building Innovation <br /> Ecosystem
             </h2>
             <p className='text-base md:text-lg font-medium mb-6 leading-[24px] text-gray-300'>
-              We work on both fronts crafting the ideas that drive innovation,
-              and activating the ecosystem by turning bold ideas into real-world
-              action.
+              We build innovation through solution design, startup growth, and
+              transformative initiatives, while activating the ecosystem with
+              hackathons, summits, and roadshows—creating a modern platform
+              where bold ideas turn into impactful solutions for Bangladesh
             </p>
             <a
               href='/our-work/innovation-ecosystem'

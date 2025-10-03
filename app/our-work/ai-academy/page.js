@@ -17,7 +17,7 @@ const page = () => {
             >
                 <div className="px-20 space-y-8">
                     <Image src={bannerLogo} width={343} height={80} alt="AI Academy Logo" />
-                    <p>This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping Bangladesh’s innovation landscape to drive growth.</p>
+                    <p>We help you grow with AI—whether you're building your career, upskilling with the right tools, or launching your own startup.</p>
                 </div>
                 <div></div>
 
@@ -29,8 +29,8 @@ const page = () => {
 
             {/* professional intelligence  */}
             <SectionBlock
-                title="AI For Professional Intelligence"
-                description="From AI competitions to founder masterclasses and innovation audits, our diverse programs are designed to spark ideas, build skills, and launch the next generation of changemakers."
+                title="AI for Professionals"
+                description="Grow the skills to lead, teach, and work with AI—built for today’s educators, doctors, and decision-makers."
                 items={professionalIntelligenceCourses}
                 bgColor="bg-[#FAFAFA]"
                 titleColor="text-black"
@@ -41,8 +41,8 @@ const page = () => {
 
             {/* AI Intelligence & Skills */}
             <SectionBlock
-                title="AI Intelligence & Skills"
-                description="From AI competitions to founder masterclasses and innovation audits, our diverse programs are designed to spark ideas, build skills, and launch the next generation of changemakers."
+                title="AI Technique Tutorial"
+                description="For data analysts, strategy consultants, digital marketers, and operations leads aiming to master real-world analytics and decision tools."
                 items={skillsIntelligenceCourses}
                 bgColor="bg-[#285473]"
                 titleColor="text-white"
@@ -53,8 +53,8 @@ const page = () => {
 
             {/* Start-up Intelligence  */}
             <SectionBlock
-                title="Start-up Intelligence"
-                description="From AI competitions to founder masterclasses and innovation audits, our diverse programs are designed to spark ideas, build skills, and launch the next generation of changemakers."
+                title="Start-up Masterclass"
+                description="Take your startup idea from spark to pitch—with AI tools, real mentors, and a demo day to launch your vision."
                 items={startupIntelligenceCourses}
                 bgColor="bg-[#FAFAFA]"
                 titleColor="text-black"

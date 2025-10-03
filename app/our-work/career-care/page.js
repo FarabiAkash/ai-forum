@@ -13,7 +13,7 @@ const page = () => {
             <CommonBanner
                 logo={bannerLogo}
                 title={'logo'}
-                description={'We shape policies and activate communities to build a stronger innovation landscape in Bangladesh through bold ideas, national benchmarks, real mentorship, and future-focused events.'}
+                description={'Whether you’re aiming for a dream job or a global research seat, we help you get there.'}
                 bannerImg={bannerBg}
             />
             <CustomBreadcrumbs

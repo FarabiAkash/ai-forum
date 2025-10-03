@@ -18,15 +18,15 @@ const OurJourney = () => {
         {/* Right Content */}
         <div className='xl:p-6'>
           <p className='text-base leading-[24px] text-[#3039E5] font-semibold mb-2'>
-            We’ve helped hundreds of companies
+            Shaping the Future with Responsible AI
           </p>
           <h2 className='text-3xl md:text-[48px] font-bold text-[#181D27] lg:leading-[60px] mb-4'>
-            We’re only just getting <br />
-            started on our journey
+            We’re Here to Build <br />
+            Bangladesh’s AI Generation
           </h2>
           <p className='text-[#000000DE] text-[18px] mb-4 leading-[24px]'>
-            AI Forum Bangladesh is an independent, non-profit organization
-            dedicated to preparing the next generation for the era of Artificial
+            AI Forum Bangladesh is an independent organization dedicated to
+            preparing the next generation for the era of Artificial
             Intelligence. We aim to bridge the gap between talent and
             opportunity by fostering innovation, building career pathways, and
             supporting meaningful ventures.

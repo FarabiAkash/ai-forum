@@ -1,5 +1,4 @@
 'use client'
-import Card from '@/components/Shared/Card'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
@@ -10,7 +9,7 @@ const courses = [
     id: 1,
     title: 'Career In Healthcare',
     description:
-      'This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.',
+      'This course empowers future business leaders with essential tools in innovation strategy, operations, communication, and AI-driven decision-making for entrepreneurial growth.',
 
     image: '/assets/our-work/career-care/c1.jpg',
     courseOutline: [
@@ -88,7 +87,7 @@ const courses = [
     id: 2,
     title: 'Career In Business',
     description:
-      'This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.',
+      'A skill-building course for aspiring health professionals—covering digital health, patient safety, public health leadership, and the integration of AI in modern care systems.',
 
     image: '/assets/our-work/career-care/c2.jpg',
     courseOutline: [
@@ -166,7 +165,7 @@ const courses = [
     id: 3,
     title: 'Career In Technology',
     description:
-      'This initiative helps researchers commercialize ideas by assessing institutional readiness and mapping.',
+      'Designed for emerging tech professionals, this program focuses on industry-relevant technical skills, career pathways in AI and data, and hands-on project readiness.',
 
     image: '/assets/our-work/career-care/c3.jpg',
     courseOutline: [

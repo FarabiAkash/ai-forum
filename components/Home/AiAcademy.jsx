@@ -10,9 +10,10 @@ const AiAcademy = () => {
         <div className='text-white lg:w-[520px] lg:mt-10'>
           <h2 className='text-2xl md:text-[40px] font-bold mb-4'>AI Academy</h2>
           <p className='text-sm md:text-[18px] leading-[24px] mb-6'>
-            We prepare you to not just work with AI but to teach it, guide it,
-            and lead with it. Our Academy helps you grow the mindset and skills
-            to shape tomorrow’s tech, business, and innovation spaces.
+            We empower learners with practical AI training, sector-focused
+            workshops, and global-standard curricula—creating a dynamic
+            knowledge hub where students, professionals, and institutions gain
+            the skills to innovate, adapt, and lead in the AI-driven future
           </p>
           <a
             href='/our-work/ai-academy'

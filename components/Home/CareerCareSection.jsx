@@ -13,9 +13,10 @@ const CareerCareSection = () => {
 
         {/* Description */}
         <p className='text-sm md:text-[18px] font-medium text-[#717680] mb-6 leading-[24px] max-w-4xl mx-auto'>
-          Whether you’re aiming for a dream job or a global research seat we
-          help you get there. From local career shifts to international
-          placements, we guide your next big move with purpose and strategy.
+          We nurture talent by offering mentorship, career guidance, and
+          skill-building opportunities, while linking individuals to jobs,
+          internships, and research placements—empowering Bangladesh’s next
+          generation to grow confidently into global leaders of the AI era
         </p>
 
         {/* Button */}

@@ -16,9 +16,9 @@ const Footer = () => {
               className='w-40 '
             />
             <p className='text-[#717680] text-base leading-[24px]'>
-              AI Forum Bangladesh is an independent
+              AI Forum Bangladesh is an independent organisation
               <br />
-              NGO that promotes AI for everyone.
+              that promotes responsible AI for everyone.
             </p>
           </div>
 
