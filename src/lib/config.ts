@@ -5,7 +5,8 @@
  * It should include the base path when deployed under one.
  * Swap to https://aiforumbd.org when the custom domain points here.
  */
-export const SITE_URL = 'https://meteorboyf.github.io/AI_Forum_Website_v3';
+// export const SITE_URL = 'https://meteorboyf.github.io/AI_Forum_Website_v3';
+export const SITE_URL = 'https://aiforumbd.org';
 
 export const SITE_NAME = 'AI Forum Bangladesh';
 
